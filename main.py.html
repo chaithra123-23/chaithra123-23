@@ -1,0 +1,1229 @@
+
+<!-- saved from url=(0042)file:///C:/Users/ragha/Recent/main.py.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>main.py</title>
+
+<style type="text/css">
+.s0 { color: #a9b7c6;}
+.s1 { color: #cc7832;}
+.s2 { color: #6a8759;}
+.s3 { color: #808080;}
+.s4 { color: #6897bb;}
+.s5 { color: #a9b7c6;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table cellspacing="0" cellpadding="5" cols="1" width="100%" bgcolor="#606060">
+<tbody><tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+main.py</font>
+</center></td></tr></tbody></table>
+<pre><span class="s0">/ *Import</span>
+<span class="s0">font * /</span>
+
+
+<span class="s0">@</span>
+
+
+<span class="s1">import </span><span class="s0">url</span>
+
+<span class="s0">(</span><span class="s2">'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&amp;display=swap'</span><span class="s0">);</span>
+
+<span class="s0">/ *Custom</span>
+<span class="s0">properties * /</span>
+<span class="s0">:root</span>
+<span class="s0">{</span>
+    <span class="s0">--light - color:  </span><span class="s3"># fff;</span>
+        <span class="s0">--light - color - alt:  </span><span class="s3"># afb6cd;</span>
+<span class="s0">--primary - background - color:  </span><span class="s3"># 131417;</span>
+<span class="s0">--secondary - background - color:  </span><span class="s3"># 252830;</span>
+<span class="s0">--hover - light - color: var(--light - color);</span>
+<span class="s0">--hover - dark - color: var(--primary - background - color);</span>
+<span class="s0">--gradient - color: linear - gradient(</span>
+    <span class="s4">115</span>
+<span class="s0">deg</span><span class="s1">,  </span><span class="s3"># 4fcf70,#fad648,#a767e5,#12bcfe,#44ce7b);</span>
+<span class="s0">--transparent - light - color: rgba(</span><span class="s4">255</span><span class="s1">, </span><span class="s4">255</span><span class="s1">, </span><span class="s4">255</span><span class="s1">, </span><span class="s4">.05</span><span class="s0">);</span>
+<span class="s0">--transparent - dark - color: rgba(</span><span class="s4">0</span><span class="s1">, </span><span class="s4">0</span><span class="s1">, </span><span class="s4">0</span><span class="s1">, </span><span class="s4">.75</span><span class="s0">);</span>
+<span class="s0">--font - family: </span><span class="s2">'Poppins'</span><span class="s1">, </span><span class="s0">sans - serif;</span>
+<span class="s0">--font - size - xsm: </span><span class="s4">1.2</span>
+<span class="s0">rem;</span>
+<span class="s0">--font - size - sm: </span><span class="s4">1.6</span>
+<span class="s0">rem;</span>
+<span class="s0">--font - size - md: </span><span class="s4">2.4</span>
+<span class="s0">rem;</span>
+<span class="s0">--font - size - lg: </span><span class="s4">3</span>
+<span class="s0">rem;</span>
+<span class="s0">--font - size - xl: </span><span class="s4">4</span>
+<span class="s0">rem;</span>
+<span class="s0">--gap: </span><span class="s4">2</span>
+<span class="s0">rem;</span>
+<span class="s0">--margin - sm: </span><span class="s4">2</span>
+<span class="s0">rem;</span>
+<span class="s0">--margin - md: </span><span class="s4">3</span>
+<span class="s0">rem;</span>
+<span class="s0">--item - min - height - sm: </span><span class="s4">20</span>
+<span class="s0">rem;</span>
+<span class="s0">--item - min - height - md: </span><span class="s4">30</span>
+<span class="s0">rem;</span>
+<span class="s0">}</span>
+
+<span class="s0">/ *Base</span>
+<span class="s0">styles * /</span>
+<span class="s0">* {</span>
+    <span class="s0">margin: </span><span class="s4">0</span><span class="s0">;</span>
+<span class="s0">padding: </span><span class="s4">0</span><span class="s0">;</span>
+<span class="s0">box - sizing: border - box;</span>
+<span class="s0">}</span>
+
+<span class="s0">html</span>
+<span class="s0">{</span>
+    <span class="s0">font - size: </span><span class="s4">62.5 </span><span class="s0">%;</span>
+<span class="s0">}</span>
+
+<span class="s0">body</span>
+<span class="s0">{</span>
+    <span class="s0">font - family: var(--font - family);</span>
+<span class="s0">font - size: var(--font - size - sm);</span>
+<span class="s0">color: var(--light - color - alt);</span>
+<span class="s0">background - color: var(--primary - background - color);</span>
+<span class="s0">letter - spacing: </span><span class="s4">1</span>
+<span class="s0">px;</span>
+<span class="s0">transition: background - color</span>
+<span class="s4">.25</span>
+<span class="s0">s</span><span class="s1">, </span><span class="s0">color</span>
+<span class="s4">.25</span>
+<span class="s0">s;</span>
+<span class="s0">}</span>
+
+<span class="s0">a</span>
+<span class="s0">{</span>
+    <span class="s0">color: inherit;</span>
+<span class="s0">text - decoration: none;</span>
+<span class="s0">}</span>
+
+<span class="s0">ul</span>
+<span class="s0">{</span>
+    <span class="s0">list - style: none;</span>
+<span class="s0">}</span>
+
+<span class="s0">img</span>
+<span class="s0">{</span>
+    <span class="s0">max - width: </span><span class="s4">100 </span><span class="s0">%;</span>
+<span class="s0">}</span>
+
+<span class="s0">input</span><span class="s1">,</span>
+<span class="s0">button</span>
+<span class="s0">{</span>
+    <span class="s0">font: inherit;</span>
+<span class="s0">color: inherit;</span>
+<span class="s0">border: none;</span>
+<span class="s0">background - color: transparent;</span>
+<span class="s0">}</span>
+
+<span class="s0">i</span>
+<span class="s0">{</span>
+    <span class="s0">font - size: var(--font - size - md);</span>
+<span class="s0">}</span>
+<span class="s0">/ *Theme</span>
+<span class="s0">color</span>
+<span class="s0">change * /</span>
+<span class="s0">body.light - theme</span>
+<span class="s0">{</span>
+    <span class="s0">--light - color:  </span><span class="s3"># 3d3d3d;</span>
+        <span class="s0">--light - color - alt: rgba(</span><span class="s4">0</span><span class="s1">, </span><span class="s4">0</span><span class="s1">, </span><span class="s4">0</span><span class="s1">, </span><span class="s4">.6</span><span class="s0">);</span>
+<span class="s0">--primary - background - color:  </span><span class="s3"># fff;</span>
+<span class="s0">--secondary - background - color:  </span><span class="s3"># f1f1f1;</span>
+<span class="s0">--hover - light - color:  </span><span class="s3"># fff;</span>
+<span class="s0">--transparent - dark - color: var(--secondary - background - color);</span>
+<span class="s0">--transparent - light - color: rgba(</span><span class="s4">0</span><span class="s1">, </span><span class="s4">0</span><span class="s1">, </span><span class="s4">0</span><span class="s1">, </span><span class="s4">.1</span><span class="s0">);</span>
+<span class="s0">}</span>
+<span class="s0">/ *Reusable</span>
+<span class="s0">classes * /</span>
+<span class="s0">.container</span>
+<span class="s0">{</span>
+    <span class="s0">max - width: </span><span class="s4">160</span><span class="s0">rem;</span>
+<span class="s0">margin: </span><span class="s4">0</span>
+<span class="s0">auto;</span>
+<span class="s0">padding: </span><span class="s4">0</span>
+<span class="s4">1.5</span>
+<span class="s0">rem;</span>
+<span class="s0">}</span>
+
+<span class="s0">.place - items - center</span>
+<span class="s0">{</span>
+    <span class="s0">display: inline - flex;</span>
+<span class="s0">align - items: center;</span>
+<span class="s0">justify - content: center;</span>
+<span class="s0">}</span>
+
+<span class="s0">.section: </span><span class="s1">not </span><span class="s0">(.featured-articles)</span>
+<span class="s0">{</span>
+    <span class="s0">padding - block: </span><span class="s4">5</span><span class="s0">rem;</span>
+<span class="s0">}</span>
+
+<span class="s0">.d - grid</span>
+<span class="s0">{</span>
+    <span class="s0">display: grid;</span>
+<span class="s0">}</span>
+
+<span class="s0">.screen - sm - hidden</span>
+<span class="s0">{</span>
+    <span class="s0">display: none;</span>
+<span class="s0">}</span>
+<span class="s0">/ *Header * /</span>
+<span class="s0">.header</span>
+<span class="s0">{</span>
+    <span class="s0">background - color: var(--secondary - background - color);</span>
+<span class="s0">position: fixed;</span>
+<span class="s0">top: </span><span class="s4">0</span><span class="s0">;</span>
+<span class="s0">left: </span><span class="s4">0</span><span class="s0">;</span>
+<span class="s0">width: </span><span class="s4">100 </span><span class="s0">%;</span>
+<span class="s0">z - index: </span><span class="s4">999</span><span class="s0">;</span>
+<span class="s0">}</span>
+
+<span class="s0">.navbar</span>
+<span class="s0">{</span>
+    <span class="s0">display: flex;</span>
+<span class="s0">align - items: center;</span>
+<span class="s0">justify - content: space - between;</span>
+<span class="s0">padding - block: </span><span class="s4">1.5</span>
+<span class="s0">rem;</span>
+<span class="s0">}</span>
+
+<span class="s0">.logo</span>
+<span class="s0">{</span>
+    <span class="s0">font - size: var(--font - size - md);</span>
+<span class="s0">color: var(--light - color);</span>
+<span class="s0">}</span>
+
+<span class="s0">.menu</span>
+<span class="s0">{</span>
+    <span class="s0">position: absolute;</span>
+<span class="s0">top: </span><span class="s4">8.5</span>
+<span class="s0">rem;</span>
+<span class="s0">right: </span><span class="s4">1.5</span>
+<span class="s0">rem;</span>
+<span class="s0">width: </span><span class="s4">23</span>
+<span class="s0">rem;</span>
+<span class="s0">padding: </span><span class="s4">1.5</span>
+<span class="s0">rem;</span>
+<span class="s0">background - color: var(--secondary - background - color);</span>
+<span class="s0">opacity: </span><span class="s4">0</span><span class="s0">;</span>
+<span class="s0">transform: scale(</span><span class="s4">0</span><span class="s0">);</span>
+<span class="s0">transition: opacity</span>
+<span class="s4">.25</span>
+<span class="s0">s</span>
+<span class="s0">ease - </span><span class="s1">in</span><span class="s0">;</span>
+<span class="s0">}</span>
+
+<span class="s0">.list</span>
+<span class="s0">{</span>
+    <span class="s0">display: flex;</span>
+<span class="s0">align - items: center;</span>
+<span class="s0">gap: var(--gap);</span>
+<span class="s0">}</span>
+
+<span class="s0">.menu &gt;.list</span>
+<span class="s0">{</span>
+    <span class="s0">flex - direction: column;</span>
+<span class="s0">}</span>
+
+<span class="s0">.list - link.current</span>
+<span class="s0">{</span>
+    <span class="s0">color: var(--light - color);</span>
+<span class="s0">}</span>
+
+<span class="s0">.close - menu - icon</span>
+<span class="s0">{</span>
+    <span class="s0">display: none;</span>
+<span class="s0">}</span>
+
+<span class="s0">.btn</span>
+<span class="s0">{</span>
+    <span class="s0">cursor: pointer;</span>
+<span class="s0">}</span>
+
+<span class="s0">.list - link: hover</span><span class="s1">,</span>
+<span class="s0">.btn: hover</span><span class="s1">,</span>
+<span class="s0">.btn: hover</span>
+<span class="s0">span</span>
+<span class="s0">{</span>
+    <span class="s0">color: var(--light - color);</span>
+<span class="s0">}</span>
+
+<span class="s0">.moon - icon</span>
+<span class="s0">{</span>
+    <span class="s0">display: none;</span>
+<span class="s0">}</span>
+
+<span class="s0">.light - theme.sun - icon</span>
+<span class="s0">{</span>
+    <span class="s0">display: none;</span>
+<span class="s0">}</span>
+
+<span class="s0">.light - theme.moon - icon</span>
+<span class="s0">{</span>
+    <span class="s0">display: block;</span>
+<span class="s0">}</span>
+<span class="s0">/ *Header</span>
+<span class="s0">JavaScript</span>
+<span class="s0">Styles * /</span>
+<span class="s0">.header.activated</span>
+<span class="s0">{</span>
+    <span class="s0">box - shadow: </span><span class="s4">0 1</span><span class="s0">px </span><span class="s4">.5</span><span class="s0">rem var(--transparent - light - color);</span>
+<span class="s0">}</span>
+
+<span class="s0">.menu.activated</span>
+<span class="s0">{</span>
+    <span class="s0">box - shadow: </span><span class="s4">1</span><span class="s0">px </span><span class="s4">1</span><span class="s0">px </span><span class="s4">1</span><span class="s0">rem var(--transparent - light - color);</span>
+<span class="s0">opacity: </span><span class="s4">1</span><span class="s0">;</span>
+<span class="s0">transform: scale(</span><span class="s4">1</span><span class="s0">);</span>
+<span class="s0">}</span>
+
+<span class="s0">.menu - toggle - icon.activated.open - menu - icon</span>
+<span class="s0">{</span>
+    <span class="s0">display: none;</span>
+<span class="s0">}</span>
+
+<span class="s0">.menu - toggle - icon.activated.close - menu - icon</span>
+<span class="s0">{</span>
+    <span class="s0">display: block;</span>
+<span class="s0">}</span>
+
+<span class="s0">/ *Search * /</span>
+<span class="s0">.search - form - container</span>
+<span class="s0">{</span>
+    <span class="s0">width: </span><span class="s4">100 </span><span class="s0">%;</span>
+<span class="s0">max - width: </span><span class="s4">100 </span><span class="s0">%;</span>
+<span class="s0">height: </span><span class="s4">100</span>
+<span class="s0">vh;</span>
+<span class="s0">background - color: var(--primary - background - color);</span>
+<span class="s0">position: fixed;</span>
+<span class="s0">top: </span><span class="s4">0</span><span class="s0">;</span>
+<span class="s0">left: </span><span class="s4">0</span><span class="s0">;</span>
+<span class="s0">z - index: </span><span class="s4">9999</span><span class="s0">;</span>
+<span class="s0">display: flex;</span>
+<span class="s0">opacity: </span><span class="s4">0</span><span class="s0">;</span>
+<span class="s0">transform: scale(</span><span class="s4">0</span><span class="s0">);</span>
+<span class="s0">transition: opacity</span>
+<span class="s4">.5</span>
+<span class="s0">s;</span>
+<span class="s0">}</span>
+
+<span class="s0">.form - container - inner</span>
+<span class="s0">{</span>
+    <span class="s0">margin: auto;</span>
+<span class="s0">display: flex;</span>
+<span class="s0">flex - direction: column;</span>
+<span class="s0">gap: var(--gap);</span>
+<span class="s0">text - align: center;</span>
+<span class="s0">}</span>
+
+<span class="s0">.form</span>
+<span class="s0">{</span>
+    <span class="s0">display: flex;</span>
+<span class="s0">justify - content: center;</span>
+<span class="s0">}</span>
+
+<span class="s0">.form - input</span><span class="s1">,</span>
+<span class="s0">.form - btn</span>
+<span class="s0">{</span>
+    <span class="s0">display: inline - block;</span>
+<span class="s0">outline: none;</span>
+<span class="s0">border: </span><span class="s4">2</span>
+<span class="s0">px</span>
+<span class="s0">solid</span>
+<span class="s0">var(--secondary - background - color);</span>
+<span class="s0">padding: </span><span class="s4">1.5</span>
+<span class="s0">rem;</span>
+<span class="s0">color: var(--light - color - alt);</span>
+<span class="s0">}</span>
+
+<span class="s0">.form - input</span>
+<span class="s0">{</span>
+    <span class="s0">border - right: none;</span>
+<span class="s0">width: </span><span class="s4">100 </span><span class="s0">%;</span>
+<span class="s0">background - color: var(--primary - background - color);</span>
+<span class="s0">}</span>
+
+<span class="s0">.form - btn</span>
+<span class="s0">{</span>
+    <span class="s0">margin - left: -</span><span class="s4">.5</span><span class="s0">rem;</span>
+<span class="s0">border - left: none;</span>
+<span class="s0">background - color: var(--secondary - background - color);</span>
+<span class="s0">text - transform: uppercase;</span>
+<span class="s0">width: </span><span class="s4">8</span>
+<span class="s0">rem;</span>
+<span class="s0">}</span>
+
+<span class="s0">.form - note</span>
+<span class="s0">{</span>
+    <span class="s0">font - size: var(--font - size - xsm);</span>
+<span class="s0">align - self: flex - end;</span>
+<span class="s0">}</span>
+
+<span class="s0">.form - close - btn</span>
+<span class="s0">{</span>
+    <span class="s0">position: absolute;</span>
+<span class="s0">top: </span><span class="s4">1.5</span>
+<span class="s0">rem;</span>
+<span class="s0">right: </span><span class="s4">1.5</span>
+<span class="s0">rem;</span>
+<span class="s0">border: </span><span class="s4">2</span>
+<span class="s0">px</span>
+<span class="s0">solid</span>
+<span class="s0">var(--secondary - background - color);</span>
+<span class="s0">width: </span><span class="s4">4</span>
+<span class="s0">rem;</span>
+<span class="s0">height: </span><span class="s4">4</span>
+<span class="s0">rem;</span>
+<span class="s0">display: flex;</span>
+<span class="s0">}</span>
+
+<span class="s0">/ *Form</span>
+<span class="s0">JavaScript</span>
+<span class="s0">styles * /</span>
+<span class="s0">.search - form - container.activated</span>
+<span class="s0">{</span>
+    <span class="s0">opacity: </span><span class="s4">1</span><span class="s0">;</span>
+<span class="s0">transform: scale(</span><span class="s4">1</span><span class="s0">);</span>
+<span class="s0">}</span>
+
+<span class="s0">/ *Featured</span>
+<span class="s0">articles * /</span>
+<span class="s0">.featured - articles</span>
+<span class="s0">{</span>
+    <span class="s0">padding - block: </span><span class="s4">2</span><span class="s0">rem;</span>
+<span class="s0">}</span>
+
+<span class="s0">.section - header - offset</span>
+<span class="s0">{</span>
+    <span class="s0">margin - top: </span><span class="s4">7.4</span><span class="s0">rem;</span>
+<span class="s0">}</span>
+
+<span class="s0">.featured - articles - container</span><span class="s1">,</span>
+<span class="s0">.featured - content</span>
+<span class="s0">{</span>
+    <span class="s0">gap: var(--gap);</span>
+<span class="s0">}</span>
+
+<span class="s0">.headline - banner</span>
+<span class="s0">{</span>
+    <span class="s0">background - color: var(--secondary - background - color);</span>
+<span class="s0">display: flex;</span>
+<span class="s0">align - items: center;</span>
+<span class="s0">gap: var(--gap);</span>
+<span class="s0">font - size: var(--font - size - xsm);</span>
+<span class="s0">}</span>
+
+<span class="s0">.headline</span>
+<span class="s0">{</span>
+    <span class="s0">background - color:  </span><span class="s3"># 000;</span>
+        <span class="s0">color: var(--light - color);</span>
+<span class="s0">font - size: </span><span class="s4">1</span>
+<span class="s0">rem;</span>
+<span class="s0">text - transform: uppercase;</span>
+<span class="s0">text - align: center;</span>
+<span class="s0">letter - spacing: </span><span class="s4">1</span>
+<span class="s0">px;</span>
+<span class="s0">padding: </span><span class="s4">4</span>
+<span class="s0">px;</span>
+<span class="s0">height: </span><span class="s4">100 </span><span class="s0">%;</span>
+<span class="s0">}</span>
+
+<span class="s0">.headline</span>
+<span class="s0">span</span>
+<span class="s0">{</span>
+    <span class="s0">height: inherit;</span>
+<span class="s0">}</span>
+
+<span class="s0">.fancy - border</span>
+<span class="s0">{</span>
+    <span class="s0">position: relative;</span>
+<span class="s0">overflow: hidden;</span>
+<span class="s0">}</span>
+
+<span class="s0">.fancy - border::before</span>
+<span class="s0">{</span>
+    <span class="s0">content: </span><span class="s2">""</span><span class="s0">;</span>
+<span class="s0">position: absolute;</span>
+<span class="s0">top: </span><span class="s4">0</span><span class="s0">;</span>
+<span class="s0">left: </span><span class="s4">0</span><span class="s0">;</span>
+<span class="s0">width: </span><span class="s4">200 </span><span class="s0">%;</span>
+<span class="s0">height: </span><span class="s4">100 </span><span class="s0">%;</span>
+<span class="s0">background: var(--gradient - color);</span>
+<span class="s0">background - size: </span><span class="s4">50 </span><span class="s0">% </span><span class="s4">100 </span><span class="s0">%;</span>
+<span class="s0">z - index: </span><span class="s4">5</span><span class="s0">;</span>
+<span class="s0">}</span>
+
+<span class="s0">.fancy - border</span>
+<span class="s0">span</span>
+<span class="s0">{</span>
+    <span class="s0">position: relative;</span>
+<span class="s0">z - index: </span><span class="s4">10</span><span class="s0">;</span>
+<span class="s0">display: inline - flex;</span>
+<span class="s0">background - color: var(--secondary - background - color);</span>
+<span class="s0">padding: </span><span class="s4">.6</span>
+<span class="s0">rem</span>
+<span class="s4">1.5</span>
+<span class="s0">rem;</span>
+<span class="s0">}</span>
+
+<span class="s0">.article</span>
+<span class="s0">{</span>
+    <span class="s0">position: relative;</span>
+<span class="s0">min - height: var(--item - min - height - md);</span>
+<span class="s0">}</span>
+
+<span class="s0">.article - image</span>
+<span class="s0">{</span>
+    <span class="s0">position: absolute;</span>
+<span class="s0">width: </span><span class="s4">100 </span><span class="s0">%;</span>
+<span class="s0">height: </span><span class="s4">100 </span><span class="s0">%;</span>
+<span class="s0">object - fit: cover;</span>
+<span class="s0">transition: transform</span>
+<span class="s4">.25</span>
+<span class="s0">s;</span>
+<span class="s0">}</span>
+
+<span class="s0">.article - category</span>
+<span class="s0">{</span>
+    <span class="s0">position: absolute;</span>
+<span class="s0">top: </span><span class="s4">1</span>
+<span class="s0">rem;</span>
+<span class="s0">right: </span><span class="s4">1</span>
+<span class="s0">rem;</span>
+<span class="s0">padding: </span><span class="s4">1</span>
+<span class="s0">rem;</span>
+<span class="s0">background - color: var(--primary - background - color);</span>
+<span class="s0">font - size: </span><span class="s4">1</span>
+<span class="s0">rem;</span>
+<span class="s0">color: var(--light - color);</span>
+<span class="s0">text - transform: uppercase;</span>
+<span class="s0">z - index: </span><span class="s4">10</span><span class="s0">;</span>
+<span class="s0">}</span>
+
+<span class="s0">.article - data - container</span>
+<span class="s0">{</span>
+    <span class="s0">width: </span><span class="s4">100 </span><span class="s0">%;</span>
+<span class="s0">position: absolute;</span>
+<span class="s0">left: </span><span class="s4">0</span><span class="s0">;</span>
+<span class="s0">bottom: </span><span class="s4">0</span><span class="s0">;</span>
+<span class="s0">padding: </span><span class="s4">2</span>
+<span class="s0">rem</span>
+<span class="s4">1.5</span>
+<span class="s0">rem;</span>
+<span class="s0">background - color: var(--transparent - dark - color);</span>
+<span class="s0">z - index: </span><span class="s4">10</span><span class="s0">;</span>
+<span class="s0">transition: background - color</span>
+<span class="s4">.5</span>
+<span class="s0">s;</span>
+<span class="s0">}</span>
+
+<span class="s0">/ *Light</span>
+<span class="s0">theme</span>
+<span class="s0">color</span>
+<span class="s0">hover</span>
+<span class="s0">styles * /</span>
+<span class="s0">.article: hover.article - data - container</span>
+<span class="s0">{</span>
+    <span class="s0">background - color: var(--hover - dark - color);</span>
+<span class="s0">color: var(--hover - light - color);</span>
+<span class="s0">}</span>
+
+<span class="s0">.article: hover.article - data - spacer</span>
+<span class="s0">{</span>
+    <span class="s0">background - color: var(--hover - light - color);</span>
+<span class="s0">}</span>
+
+<span class="s0">.article: hover.article - title</span>
+<span class="s0">{</span>
+    <span class="s0">color: var(--hover - light - color);</span>
+<span class="s0">}</span>
+
+<span class="s0">.article - data</span>
+<span class="s0">{</span>
+    <span class="s0">display: flex;</span>
+<span class="s0">align - items: center;</span>
+<span class="s0">gap: var(--gap);</span>
+<span class="s0">font - size: var(--font - size - xsm);</span>
+<span class="s0">margin - bottom: </span><span class="s4">1</span>
+<span class="s0">rem;</span>
+<span class="s0">}</span>
+
+<span class="s0">.article - data - spacer</span>
+<span class="s0">{</span>
+    <span class="s0">width: </span><span class="s4">.5</span><span class="s0">rem;</span>
+<span class="s0">height: </span><span class="s4">.5</span>
+<span class="s0">rem;</span>
+<span class="s0">background - color: var(--light - color - alt);</span>
+<span class="s0">transform: rotate(</span><span class="s4">45</span>
+<span class="s0">deg);</span>
+<span class="s0">}</span>
+
+<span class="s0">.title</span>
+<span class="s0">{</span>
+    <span class="s0">color: var(--light - color);</span>
+<span class="s0">}</span>
+
+<span class="s0">.article - title</span>
+<span class="s0">{</span>
+    <span class="s0">font - size: var(--font - size - md);</span>
+<span class="s0">}</span>
+
+<span class="s0">/ *Sidebar * /</span>
+<span class="s0">.sidebar</span>
+<span class="s0">{</span>
+    <span class="s0">background - color: var(--secondary - background - color);</span>
+<span class="s0">padding: </span><span class="s4">2.5</span>
+<span class="s0">rem;</span>
+<span class="s0">}</span>
+
+<span class="s0">.trending - news - box</span>
+<span class="s0">{</span>
+    <span class="s0">display: flex;</span>
+<span class="s0">flex - direction: column;</span>
+<span class="s0">gap: var(--gap);</span>
+<span class="s0">padding - block: </span><span class="s4">2</span>
+<span class="s0">rem;</span>
+<span class="s0">border - bottom: </span><span class="s4">1</span>
+<span class="s0">px</span>
+<span class="s0">solid</span>
+<span class="s0">var(--transparent - light - color);</span>
+<span class="s0">}</span>
+
+<span class="s0">.trending - news - box: last - of - type</span>
+<span class="s0">{</span>
+    <span class="s0">border - bottom: none;</span>
+<span class="s0">}</span>
+
+<span class="s0">.featured - content - title</span>
+<span class="s0">{</span>
+    <span class="s0">font - size: var(--font - size - md);</span>
+<span class="s0">text - align: center;</span>
+<span class="s0">padding: </span><span class="s4">1</span>
+<span class="s0">rem;</span>
+<span class="s0">}</span>
+
+<span class="s0">.trending - news - img - box</span>
+<span class="s0">{</span>
+    <span class="s0">position: relative;</span>
+<span class="s0">width: </span><span class="s4">100 </span><span class="s0">%;</span>
+<span class="s0">height: var(--item - min - height - sm);</span>
+<span class="s0">}</span>
+
+<span class="s0">.trending - number</span>
+<span class="s0">{</span>
+    <span class="s0">position: absolute;</span>
+<span class="s0">top: -</span><span class="s4">1</span>
+<span class="s0">rem;</span>
+<span class="s0">left: -</span><span class="s4">1</span>
+<span class="s0">rem;</span>
+<span class="s0">z - index: </span><span class="s4">15</span><span class="s0">;</span>
+<span class="s0">width: </span><span class="s4">3</span>
+<span class="s0">rem;</span>
+<span class="s0">height: </span><span class="s4">3</span>
+<span class="s0">rem;</span>
+<span class="s0">background - color: var(--secondary - background - color);</span>
+<span class="s0">color: var(--light - color);</span>
+<span class="s0">border - radius: </span><span class="s4">50 </span><span class="s0">%;</span>
+<span class="s0">}</span>
+
+<span class="s0">.trending - news - data.article - title</span>
+<span class="s0">{</span>
+    <span class="s0">font - size: var(--font - size - sm);</span>
+<span class="s0">}</span>
+
+<span class="s0">.trending - news - box: hover.article - title</span>
+<span class="s0">{</span>
+    <span class="s0">color: var(--light - color - alt);</span>
+<span class="s0">}</span>
+
+<span class="s0">/ *Quick</span>
+<span class="s0">read * /</span>
+<span class="s0">.section - title</span>
+<span class="s0">{</span>
+    <span class="s0">position: relative;</span>
+<span class="s0">font - size: var(--font - size - md);</span>
+<span class="s0">margin - bottom: </span><span class="s4">6</span>
+<span class="s0">rem;</span>
+<span class="s0">}</span>
+
+<span class="s0">.section - title::after</span>
+<span class="s0">{</span>
+    <span class="s0">content: attr(data - name);</span>
+<span class="s0">font - size: var(--font - size - lg);</span>
+<span class="s0">text - transform: uppercase;</span>
+<span class="s0">opacity: </span><span class="s4">.1</span><span class="s0">;</span>
+<span class="s0">position: absolute;</span>
+<span class="s0">top: </span><span class="s4">1.5</span>
+<span class="s0">rem;</span>
+<span class="s0">left: </span><span class="s4">2</span>
+<span class="s0">rem;</span>
+<span class="s0">}</span>
+
+<span class="s0">.article.swiper - slide</span>
+<span class="s0">{</span>
+    <span class="s0">height: </span><span class="s4">40</span><span class="s0">rem;</span>
+<span class="s0">}</span>
+
+<span class="s0">/ *Quick</span>
+<span class="s0">read - Swiper * /</span>
+<span class="s0">.swiper - wrapper</span>
+<span class="s0">{</span>
+    <span class="s0">height: auto;</span>
+<span class="s0">}</span>
+<span class="s0">.swiper - controls</span>
+<span class="s0">{</span>
+    <span class="s0">width: </span><span class="s4">3.5</span><span class="s0">rem;</span>
+<span class="s0">height: </span><span class="s4">3.5</span>
+<span class="s0">rem;</span>
+<span class="s0">background - color: var(--secondary - background - color);</span>
+<span class="s0">}</span>
+
+<span class="s0">.swiper - controls::after</span>
+<span class="s0">{</span>
+    <span class="s0">font - size: </span><span class="s4">1.6</span><span class="s0">rem;</span>
+<span class="s0">color: var(--light - color);</span>
+<span class="s0">}</span>
+
+<span class="s0">.swiper - pagination</span>
+<span class="s0">{</span>
+    <span class="s0">bottom: </span><span class="s4">.5</span><span class="s0">rem </span><span class="s5">!</span><span class="s0">important;</span>
+<span class="s0">}</span>
+
+<span class="s0">.swiper - pagination - bullet</span>
+<span class="s0">{</span>
+    <span class="s0">background - color: var(--light - color);</span>
+<span class="s0">}</span>
+
+<span class="s0">/ *Older</span>
+<span class="s0">posts * /</span>
+<span class="s0">.older - posts - grid - wrapper</span>
+<span class="s0">{</span>
+    <span class="s0">gap: var(--gap);</span>
+<span class="s0">}</span>
+
+<span class="s0">.older - posts - article - image - wrapper</span><span class="s1">,</span>
+<span class="s0">.older - posts.article</span>
+<span class="s0">{</span>
+    <span class="s0">min - height: var(--item - min - height - sm);</span>
+<span class="s0">}</span>
+
+<span class="s0">.older - posts.article</span>
+<span class="s0">{</span>
+    <span class="s0">background - color: var(--secondary - background - color);</span>
+<span class="s0">}</span>
+
+<span class="s0">.older - posts - article - image - wrapper</span>
+<span class="s0">{</span>
+    <span class="s0">position: relative;</span>
+<span class="s0">}</span>
+
+<span class="s0">.older - posts - grid - wrapper.article - data - container</span>
+<span class="s0">{</span>
+    <span class="s0">position: static;</span>
+<span class="s0">background - color: transparent;</span>
+<span class="s0">}</span>
+
+<span class="s0">.older - posts - grid - wrapper.article - title</span>
+<span class="s0">{</span>
+    <span class="s0">margin - bottom: var(--margin - sm);</span>
+<span class="s0">}</span>
+
+<span class="s0">.see - more - container</span>
+<span class="s0">{</span>
+    <span class="s0">padding - top: var(--margin - md);</span>
+<span class="s0">}</span>
+
+<span class="s0">.see - more - btn</span>
+<span class="s0">{</span>
+    <span class="s0">text - transform: uppercase;</span>
+<span class="s0">}</span>
+
+<span class="s0">.see - more - btn: hover</span>
+<span class="s0">{</span>
+    <span class="s0">color: var(--light - color);</span>
+<span class="s0">}</span>
+
+<span class="s0">.see - more - btn</span>
+<span class="s0">i</span>
+<span class="s0">{</span>
+    <span class="s0">transition: transform </span><span class="s4">.25</span><span class="s0">s;</span>
+<span class="s0">}</span>
+
+<span class="s0">.see - more - btn: hover</span>
+<span class="s0">i</span>
+<span class="s0">{</span>
+    <span class="s0">transform: translateX(</span><span class="s4">.5</span><span class="s0">rem);</span>
+<span class="s0">}</span>
+
+<span class="s0">/ *Popular</span>
+<span class="s0">tags * /</span>
+<span class="s0">.popular - tags - container</span>
+<span class="s0">{</span>
+    <span class="s0">gap: var(--gap);</span>
+<span class="s0">}</span>
+
+<span class="s0">.popular - tags - container.article</span>
+<span class="s0">{</span>
+    <span class="s0">min - height: var(--item - min - height - sm);</span>
+<span class="s0">}</span>
+
+<span class="s0">.tag - name</span>
+<span class="s0">{</span>
+    <span class="s0">padding: </span><span class="s4">1</span><span class="s0">rem </span><span class="s4">2</span><span class="s0">rem;</span>
+<span class="s0">background - color: var(--transparent - dark - color);</span>
+<span class="s0">position: absolute;</span>
+<span class="s0">top: </span><span class="s4">50 </span><span class="s0">%;</span>
+<span class="s0">left: </span><span class="s4">50 </span><span class="s0">%;</span>
+<span class="s0">transform: translate(-</span><span class="s4">50 </span><span class="s0">%</span><span class="s1">, </span><span class="s0">-</span><span class="s4">50 </span><span class="s0">%);</span>
+<span class="s0">z - index: </span><span class="s4">10</span><span class="s0">;</span>
+<span class="s0">}</span>
+
+<span class="s0">.popular - tags - container.article: hover.tag - name</span>
+<span class="s0">{</span>
+    <span class="s0">color: var(--light - color);</span>
+<span class="s0">}</span>
+
+<span class="s0">.popular - tags - container.article</span>
+<span class="s0">{</span>
+    <span class="s0">overflow: hidden;</span>
+<span class="s0">}</span>
+
+<span class="s0">.popular - tags - container.article: hover.article - image</span>
+<span class="s0">{</span>
+    <span class="s0">transform: scale(</span><span class="s4">1.05</span><span class="s0">);</span>
+<span class="s0">}</span>
+
+<span class="s0">/ *Newsletter * /</span>
+<span class="s0">.newsletter</span>
+<span class="s0">{</span>
+    <span class="s0">padding - bottom: </span><span class="s4">6</span><span class="s0">rem;</span>
+<span class="s0">}</span>
+
+<span class="s0">.newsletter - title</span>
+<span class="s0">{</span>
+    <span class="s0">font - size: var(--font - size - lg);</span>
+<span class="s0">}</span>
+
+<span class="s0">.newsletter - description</span>
+<span class="s0">{</span>
+    <span class="s0">margin - bottom: </span><span class="s4">3</span><span class="s0">rem;</span>
+<span class="s0">}</span>
+
+<span class="s0">/ *Footer * /</span>
+<span class="s0">.footer</span>
+<span class="s0">{</span>
+    <span class="s0">background - color: var(--secondary - background - color);</span>
+<span class="s0">}</span>
+
+<span class="s0">.footer - container</span>
+<span class="s0">{</span>
+    <span class="s0">gap: var(--gap);</span>
+<span class="s0">}</span>
+
+<span class="s0">.company - data</span>
+<span class="s0">{</span>
+    <span class="s0">display: flex;</span>
+<span class="s0">flex - direction: column;</span>
+<span class="s0">order: </span><span class="s4">1</span><span class="s0">;</span>
+<span class="s0">}</span>
+
+<span class="s0">.company - description</span>
+<span class="s0">{</span>
+    <span class="s0">margin - block: var(--margin - sm);</span>
+<span class="s0">max - width: </span><span class="s4">75 </span><span class="s0">%;</span>
+<span class="s0">}</span>
+
+<span class="s0">.social - media</span>
+<span class="s0">{</span>
+    <span class="s0">margin - bottom: var(--margin - md);</span>
+<span class="s0">}</span>
+
+<span class="s0">.copyright - notice</span>
+<span class="s0">{</span>
+    <span class="s0">opacity: </span><span class="s4">.8</span><span class="s0">;</span>
+<span class="s0">}</span>
+
+<span class="s0">.footer - list</span>
+<span class="s0">{</span>
+    <span class="s0">flex - direction: column;</span>
+<span class="s0">align - items: flex - start;</span>
+<span class="s0">}</span>
+
+<span class="s0">.footer - title</span>
+<span class="s0">{</span>
+    <span class="s0">font - size: var(--font - size - sm);</span>
+<span class="s0">text - transform: uppercase;</span>
+<span class="s0">margin - bottom: var(--margin - sm);</span>
+<span class="s0">}</span>
+
+<span class="s0">/ *Scrollbar * /</span>
+<span class="s0">::-webkit - scrollbar</span>
+<span class="s0">{</span>
+    <span class="s0">width: </span><span class="s4">1</span><span class="s0">rem;</span>
+<span class="s0">}</span>
+
+<span class="s0">::-webkit - scrollbar - track</span>
+<span class="s0">{</span>
+    <span class="s0">background:  </span><span class="s3"># f1f1f1;</span>
+<span class="s0">}</span>
+
+<span class="s0">::-webkit - scrollbar - thumb</span>
+<span class="s0">{</span>
+    <span class="s0">background:  </span><span class="s3"># 3f4254;</span>
+<span class="s0">}</span>
+
+<span class="s0">::-webkit - scrollbar - thumb: hover</span>
+<span class="s0">{</span>
+    <span class="s0">background:  </span><span class="s3"># 2e303b;</span>
+<span class="s0">}</span>
+
+<span class="s0">/ * Blog</span>
+<span class="s0">post * /</span>
+<span class="s0">.blog - post</span>
+<span class="s0">{</span>
+    <span class="s0">padding - bottom: </span><span class="s4">5</span><span class="s0">rem;</span>
+<span class="s0">}</span>
+
+<span class="s0">.blog - post - data</span>
+<span class="s0">{</span>
+    <span class="s0">display: flex;</span>
+<span class="s0">flex - direction: column;</span>
+<span class="s0">align - items: center;</span>
+<span class="s0">text - align: center;</span>
+<span class="s0">padding - block: </span><span class="s4">2.5</span>
+<span class="s0">rem;</span>
+<span class="s0">}</span>
+
+<span class="s0">.blog - post - title</span>
+<span class="s0">{</span>
+    <span class="s0">font - size: clamp(</span><span class="s4">3</span><span class="s0">rem</span><span class="s1">, </span><span class="s4">5</span>
+<span class="s0">vw</span><span class="s1">, </span><span class="s4">6</span>
+<span class="s0">rem);</span>
+<span class="s0">}</span>
+
+<span class="s0">.blog - post - data.article - data</span>
+<span class="s0">{</span>
+    <span class="s0">margin - bottom: </span><span class="s4">2.5</span><span class="s0">rem;</span>
+<span class="s0">}</span>
+
+<span class="s0">.blog - post - data</span>
+<span class="s0">img</span>
+<span class="s0">{</span>
+    <span class="s0">width: </span><span class="s4">100 </span><span class="s0">%;</span>
+<span class="s0">height: var(--item - min - height - sm);</span>
+<span class="s0">object - fit: cover;</span>
+<span class="s0">object - position: center</span>
+<span class="s4">10 </span><span class="s0">%;</span>
+<span class="s0">}</span>
+
+<span class="s0">.blog - post - container.container</span>
+<span class="s0">{</span>
+    <span class="s0">max - width: </span><span class="s4">90</span><span class="s0">rem;</span>
+<span class="s0">padding: </span><span class="s4">0</span><span class="s0">;</span>
+<span class="s0">display: flex;</span>
+<span class="s0">flex - direction: column;</span>
+<span class="s0">gap: var(--gap);</span>
+<span class="s0">}</span>
+
+<span class="s0">.quote</span>
+<span class="s0">{</span>
+    <span class="s0">background - color: var(--secondary - background - color);</span>
+<span class="s0">padding: </span><span class="s4">2.5</span>
+<span class="s0">rem;</span>
+<span class="s0">}</span>
+
+<span class="s0">.quote</span>
+<span class="s0">p</span>
+<span class="s0">{</span>
+    <span class="s0">font - style: italic;</span>
+<span class="s0">}</span>
+
+<span class="s0">.quote</span>
+<span class="s0">span</span>
+<span class="s0">{</span>
+    <span class="s0">font - size: </span><span class="s4">5</span><span class="s0">rem;</span>
+<span class="s0">}</span>
+
+<span class="s0">.author</span>
+<span class="s0">{</span>
+    <span class="s0">margin - top: </span><span class="s4">5</span><span class="s0">rem;</span>
+<span class="s0">gap: var(--gap);</span>
+<span class="s0">}</span>
+
+<span class="s0">.author</span>
+<span class="s0">{</span>
+    <span class="s0">background - color: var(--secondary - background - color);</span>
+<span class="s0">}</span>
+
+<span class="s0">.author - image - box</span>
+<span class="s0">{</span>
+    <span class="s0">position: relative;</span>
+<span class="s0">height: var(--item - min - height - sm);</span>
+<span class="s0">}</span>
+
+<span class="s0">.author - about</span>
+<span class="s0">{</span>
+    <span class="s0">padding: </span><span class="s4">1.5</span><span class="s0">rem;</span>
+<span class="s0">display: flex;</span>
+<span class="s0">flex - direction: column;</span>
+<span class="s0">gap: </span><span class="s4">1</span>
+<span class="s0">rem;</span>
+<span class="s0">}</span>
+
+<span class="s0">.author - name</span>
+<span class="s0">{</span>
+    <span class="s0">color: var(--light - color);</span>
+<span class="s0">font - weight: </span><span class="s4">400</span><span class="s0">;</span>
+<span class="s0">}</span>
+
+<span class="s0">.author - about</span>
+<span class="s0">p</span>
+<span class="s0">{</span>
+    <span class="s0">max - width: </span><span class="s4">50</span><span class="s0">rem;</span>
+<span class="s0">margin - bottom: </span><span class="s4">1</span>
+<span class="s0">rem;</span>
+<span class="s0">}</span>
+
+<span class="s0">.author - about.social - media</span>
+<span class="s0">{</span>
+    <span class="s0">margin - top: auto;</span>
+<span class="s0">margin - bottom: </span><span class="s4">0</span><span class="s0">;</span>
+<span class="s0">}</span>
+
+<span class="s0">@media</span>
+
+
+<span class="s0">screen </span><span class="s1">and </span><span class="s0">(min - width: </span><span class="s4">700</span><span class="s0">px)</span>
+<span class="s0">{</span>
+
+<span class="s0">.trending - news - box</span>
+<span class="s0">{</span>
+    <span class="s0">flex - direction: row;</span>
+<span class="s0">align - items: center;</span>
+<span class="s0">}</span>
+
+<span class="s0">.trending - news - img - box</span>
+<span class="s0">{</span>
+    <span class="s0">width: </span><span class="s4">50 </span><span class="s0">%;</span>
+<span class="s0">}</span>
+
+<span class="s0">.trending - news - data</span>
+<span class="s0">{</span>
+    <span class="s0">margin: auto;</span>
+<span class="s0">text - align: center;</span>
+<span class="s0">}</span>
+
+<span class="s0">.newsletter - description</span>
+<span class="s0">{</span>
+    <span class="s0">max - width: </span><span class="s4">40</span><span class="s0">rem;</span>
+<span class="s0">}</span>
+
+<span class="s0">.form - container - inner</span>
+<span class="s0">{</span>
+    <span class="s0">align - items: center;</span>
+<span class="s0">}</span>
+
+<span class="s0">.popular - tags - container</span><span class="s1">,</span>
+<span class="s0">.footer - container</span>
+<span class="s0">{</span>
+    <span class="s0">grid - template - columns: repeat(</span><span class="s4">2</span><span class="s1">, </span><span class="s4">1</span><span class="s0">fr);</span>
+<span class="s0">}</span>
+
+<span class="s0">.company - data</span>
+<span class="s0">{</span>
+    <span class="s0">order: </span><span class="s4">0</span><span class="s0">;</span>
+<span class="s0">}</span>
+
+<span class="s0">.author</span>
+<span class="s0">{</span>
+    <span class="s0">grid - template - columns: </span><span class="s4">25</span><span class="s0">rem </span><span class="s4">1</span><span class="s0">fr;</span>
+<span class="s0">}</span>
+<span class="s0">}</span>
+
+<span class="s0">@media</span>
+
+
+<span class="s0">screen </span><span class="s1">and </span><span class="s0">(min - width: </span><span class="s4">768</span><span class="s0">px)</span>
+<span class="s0">{</span>
+
+<span class="s0">.featured - content</span>
+<span class="s0">{</span>
+    <span class="s0">grid - template - columns: repeat(</span><span class="s4">4</span><span class="s1">, </span><span class="s4">1</span><span class="s0">fr);</span>
+<span class="s0">grid - template - rows: </span><span class="s4">5</span>
+<span class="s0">rem</span>
+<span class="s0">repeat(</span><span class="s4">4</span><span class="s1">, </span><span class="s4">1</span>
+<span class="s0">fr);</span>
+<span class="s0">}</span>
+
+<span class="s0">.headline - banner</span>
+<span class="s0">{</span>
+    <span class="s0">grid - column: </span><span class="s4">1 </span><span class="s0">/ -</span><span class="s4">1</span><span class="s0">;</span>
+<span class="s0">font - size: var(--font - size - sm);</span>
+<span class="s0">}</span>
+
+<span class="s0">.featured - article</span>
+<span class="s0">{</span>
+    <span class="s0">grid - column: </span><span class="s4">3 </span><span class="s0">/ -</span><span class="s4">1</span><span class="s0">;</span>
+<span class="s0">grid - row: </span><span class="s4">2 </span><span class="s0">/ </span><span class="s4">4</span><span class="s0">;</span>
+<span class="s0">}</span>
+
+<span class="s0">.featured - article - </span><span class="s4">1</span>
+<span class="s0">{</span>
+    <span class="s0">grid - column: </span><span class="s4">1 </span><span class="s0">/ </span><span class="s4">3</span><span class="s0">;</span>
+<span class="s0">}</span>
+
+<span class="s0">.featured - article - </span><span class="s4">3</span>
+<span class="s0">{</span>
+    <span class="s0">grid - column: </span><span class="s4">1 </span><span class="s0">/ -</span><span class="s4">1</span><span class="s0">;</span>
+<span class="s0">grid - row: </span><span class="s4">4 </span><span class="s0">/ </span><span class="s4">6</span><span class="s0">;</span>
+<span class="s0">}</span>
+
+<span class="s0">.older - posts.article</span>
+<span class="s0">{</span>
+    <span class="s0">grid - template - columns: </span><span class="s4">25</span><span class="s0">rem </span><span class="s4">1</span><span class="s0">fr;</span>
+
+<span class="s0">}</span>
+
+<span class="s0">.older - posts - article - image - wrapper</span>
+<span class="s0">{</span>
+    <span class="s0">height: auto;</span>
+<span class="s0">}</span>
+
+<span class="s0">.blog - post - data</span>
+<span class="s0">img</span>
+<span class="s0">{</span>
+    <span class="s0">height: var(--item - min - height - md);;</span>
+<span class="s0">}</span>
+<span class="s0">}</span>
+
+<span class="s0">@media</span>
+
+
+<span class="s0">screen </span><span class="s1">and </span><span class="s0">(min - width: </span><span class="s4">1024</span><span class="s0">px)</span>
+<span class="s0">{</span>
+<span class="s0">.menu</span>
+<span class="s0">{</span>
+    <span class="s0">position: static;</span>
+<span class="s0">width: initial;</span>
+<span class="s0">padding: initial;</span>
+<span class="s0">background - color: transparent;</span>
+<span class="s0">opacity: </span><span class="s4">1</span><span class="s0">;</span>
+<span class="s0">transform: scale(</span><span class="s4">1</span><span class="s0">);</span>
+<span class="s0">}</span>
+
+<span class="s0">.menu &gt;.list</span>
+<span class="s0">{</span>
+    <span class="s0">flex - direction: row;</span>
+<span class="s0">}</span>
+
+<span class="s0">.screen - lg - hidden</span>
+<span class="s0">{</span>
+    <span class="s0">display: none;</span>
+<span class="s0">}</span>
+
+<span class="s0">.screen - sm - hidden</span>
+<span class="s0">{</span>
+    <span class="s0">display: block;</span>
+<span class="s0">}</span>
+
+<span class="s0">.sign - up - btn</span>
+<span class="s0">{</span>
+    <span class="s0">padding: </span><span class="s4">4</span><span class="s0">px;</span>
+<span class="s0">}</span>
+
+<span class="s0">/ *Fancy</span>
+<span class="s0">button</span>
+<span class="s0">animation</span>
+<span class="s0">effect * /</span>
+<span class="s0">.btn.fancy - border: hover::before</span>
+<span class="s0">{</span>
+    <span class="s0">animation: animate_border </span><span class="s4">.75</span><span class="s0">s linear infinite</span>
+<span class="s0">}</span>
+
+<span class="s0">@ keyframes</span>
+<span class="s0">animate_border</span>
+<span class="s0">{</span>
+    <span class="s0">to</span>
+<span class="s0">{</span>
+    <span class="s0">transform: translateX(-</span><span class="s4">50 </span><span class="s0">%)</span>
+<span class="s0">}</span>
+<span class="s0">}</span>
+
+<span class="s0">.featured - articles - container</span>
+<span class="s0">{</span>
+    <span class="s0">grid - template - columns: </span><span class="s4">1</span><span class="s0">fr </span><span class="s4">40</span><span class="s0">rem;</span>
+<span class="s0">}</span>
+
+<span class="s0">.trending - news - img - box</span>
+<span class="s0">{</span>
+    <span class="s0">width: </span><span class="s4">10</span><span class="s0">rem;</span>
+<span class="s0">height: </span><span class="s4">10</span>
+<span class="s0">rem;</span>
+<span class="s0">}</span>
+
+<span class="s0">.popular - tags - container</span>
+<span class="s0">{</span>
+    <span class="s0">grid - template - columns: repeat(</span><span class="s4">3</span><span class="s1">, </span><span class="s4">1</span><span class="s0">fr);</span>
+<span class="s0">}</span>
+
+<span class="s0">.footer - container</span>
+<span class="s0">{</span>
+    <span class="s0">grid - template - columns: repeat(</span><span class="s4">5</span><span class="s1">, </span><span class="s4">1</span><span class="s0">fr);</span>
+<span class="s0">}</span>
+
+<span class="s0">.company - data</span>
+<span class="s0">{</span>
+    <span class="s0">grid - column: span </span><span class="s4">2</span><span class="s0">;</span>
+<span class="s0">}</span>
+
+<span class="s0">.company - description</span>
+<span class="s0">{</span>
+    <span class="s0">max - width: </span><span class="s4">85 </span><span class="s0">%;</span>
+<span class="s0">}</span>
+
+<span class="s0">.copyright - notice</span>
+<span class="s0">{</span>
+    <span class="s0">margin - top: auto;</span>
+<span class="s0">}</span>
+
+<span class="s0">.blog - post - data</span>
+<span class="s0">img</span>
+<span class="s0">{</span>
+    <span class="s0">height: </span><span class="s4">40</span><span class="s0">rem;</span>
+<span class="s0">}</span>
+<span class="s0">}</span>
+
+<span class="s0">@media</span>
+
+
+<span class="s0">screen </span><span class="s1">and </span><span class="s0">(min - width: </span><span class="s4">1200</span><span class="s0">px)</span>
+<span class="s0">{</span>
+<span class="s0">.older - posts - grid - wrapper</span>
+<span class="s0">{</span>
+    <span class="s0">grid - template - columns: repeat(</span><span class="s4">2</span><span class="s1">, </span><span class="s4">1</span><span class="s0">fr);</span>
+<span class="s0">}</span>
+<span class="s0">}</span>
+
+<span class="s0">@media</span>
+
+
+<span class="s0">screen </span><span class="s1">and </span><span class="s0">(min - width: </span><span class="s4">1500</span><span class="s0">px)</span>
+<span class="s0">{</span>
+<span class="s0">.featured - article</span>
+<span class="s0">{</span>
+    <span class="s0">grid - column: </span><span class="s4">3 </span><span class="s0">/ -</span><span class="s4">1</span><span class="s0">;</span>
+<span class="s0">}</span>
+
+<span class="s0">.featured - article - </span><span class="s4">1</span>
+<span class="s0">{</span>
+    <span class="s0">grid - column: </span><span class="s4">1 </span><span class="s0">/ </span><span class="s4">3</span><span class="s0">;</span>
+<span class="s0">grid - row: </span><span class="s4">2 </span><span class="s0">/ -</span><span class="s4">1</span><span class="s0">;</span>
+<span class="s0">}</span>
+
+<span class="s0">}</span>
+</pre>
+
+</body></html>
