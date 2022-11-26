@@ -1,0 +1,704 @@
+
+<!-- saved from url=(0044)file:///C:/Users/ragha/Recent/chaitra.h.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>chaitra.h</title>
+
+<style type="text/css">
+.s0 { color: #a9b7c6;}
+.s1 { color: #6a8759;}
+.s2 { color: #0f9795;}
+.s3 { color: #ab51ba;}
+.s4 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table cellspacing="0" cellpadding="5" cols="1" width="100%" bgcolor="#606060">
+<tbody><tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+chaitra.h</font>
+</center></td></tr></tbody></table>
+<pre><span class="s0">&lt;html lang=</span><span class="s1">"en"</span><span class="s0">&gt;</span>
+<span class="s0">&lt;head&gt;</span>
+    <span class="s0">&lt;meta charset=</span><span class="s1">"UTF-8"</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;meta http-equiv=</span><span class="s1">"X-UA-Compatible" </span><span class="s0">content=</span><span class="s1">"IE=edge"</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;meta name=</span><span class="s1">"viewport" </span><span class="s0">content=</span><span class="s1">"width=device-width, initial-scale=1.0"</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;title&gt;Completed - NewsFlash | Home&lt;/title&gt;</span>
+    <span class="s0">&lt;!-- Favicon -</span><span class="s2">-&gt;</span>
+    <span class="s0">&lt;link rel=</span><span class="s1">"icon" </span><span class="s0">type=</span><span class="s1">"image/png" </span><span class="s0">sizes=</span><span class="s1">"32x32" </span><span class="s0">href=</span><span class="s1">"./assets/images/favicon.png"</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;!-- Remix icons -</span><span class="s2">-&gt;</span>
+    <span class="s0">&lt;link href=</span><span class="s1">"https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" </span><span class="s0">rel=</span><span class="s1">"stylesheet"</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;!-- Swiper.js styles -</span><span class="s2">-&gt;</span>
+    <span class="s0">&lt;link rel=</span><span class="s1">"stylesheet" </span><span class="s0">href=</span><span class="s1">"./assets/css/swiper-bundle.min.css"</span><span class="s0">/&gt;</span>
+    <span class="s0">&lt;!-- Custom styles -</span><span class="s2">-&gt;</span>
+    <span class="s0">&lt;link rel=</span><span class="s1">"stylesheet" </span><span class="s0">href=</span><span class="s1">"./assets/css/main.css"</span><span class="s0">&gt;</span>
+<span class="s0">&lt;/head&gt;</span>
+<span class="s0">&lt;body&gt;</span>
+    <span class="s0">&lt;!-- Header -</span><span class="s2">-&gt;</span>
+    <span class="s0">&lt;header </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"header" </span><span class="s0">id=</span><span class="s1">"header"</span><span class="s0">&gt;</span>
+
+        <span class="s0">&lt;nav </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"navbar container"</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;a href=</span><span class="s1">"./index.html"</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;h2 </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"logo"</span><span class="s0">&gt;NewsFlash&lt;/h2&gt;</span>
+            <span class="s0">&lt;/a&gt;</span>
+
+            <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"menu" </span><span class="s0">id=</span><span class="s1">"menu"</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;ul </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list"</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;li </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list-item"</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;a href=</span><span class="s1">"#" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list-link current"</span><span class="s0">&gt;Home&lt;/a&gt;</span>
+                    <span class="s0">&lt;/li&gt;</span>
+                    <span class="s0">&lt;li </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list-item"</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;a href=</span><span class="s1">"#" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list-link"</span><span class="s0">&gt;Categories&lt;/a&gt;</span>
+                    <span class="s0">&lt;/li&gt;</span>
+                    <span class="s0">&lt;li </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list-item"</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;a href=</span><span class="s1">"#" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list-link"</span><span class="s0">&gt;Reviews&lt;/a&gt;</span>
+                    <span class="s0">&lt;/li&gt;</span>
+                    <span class="s0">&lt;li </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list-item"</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;a href=</span><span class="s1">"#" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list-link"</span><span class="s0">&gt;News&lt;/a&gt;</span>
+                    <span class="s0">&lt;/li&gt;</span>
+                    <span class="s0">&lt;li </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list-item"</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;a href=</span><span class="s1">"#" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list-link"</span><span class="s0">&gt;Membership&lt;/a&gt;</span>
+                    <span class="s0">&lt;/li&gt;</span>
+                    <span class="s0">&lt;li </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list-item"</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;a href=</span><span class="s1">"#" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list-link"</span><span class="s0">&gt;Contact&lt;/a&gt;</span>
+                    <span class="s0">&lt;/li&gt;</span>
+                    <span class="s0">&lt;li </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list-item screen-lg-hidden"</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;a href=</span><span class="s1">"./signin.html" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list-link"</span><span class="s0">&gt;Sign in&lt;/a&gt;</span>
+                    <span class="s0">&lt;/li&gt;</span>
+                    <span class="s0">&lt;li </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list-item screen-lg-hidden"</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;a href=</span><span class="s1">"./signup.html" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list-link"</span><span class="s0">&gt;Sign up&lt;/a&gt;</span>
+                    <span class="s0">&lt;/li&gt;</span>
+                <span class="s0">&lt;/ul&gt;</span>
+            <span class="s0">&lt;/div&gt;</span>
+
+            <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list list-right"</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;button </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"btn place-items-center" </span><span class="s0">id=</span><span class="s1">"theme-toggle-btn"</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;i </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"ri-sun-line sun-icon"</span><span class="s0">&gt;&lt;/i&gt;</span>
+                    <span class="s0">&lt;i </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"ri-moon-line moon-icon"</span><span class="s0">&gt;&lt;/i&gt;</span>
+                <span class="s0">&lt;/button&gt;</span>
+
+                <span class="s0">&lt;button </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"btn place-items-center" </span><span class="s0">id=</span><span class="s1">"search-icon"</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;i </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"ri-search-line"</span><span class="s0">&gt;&lt;/i&gt;</span>
+                <span class="s0">&lt;/button&gt;</span>
+
+                <span class="s0">&lt;button </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"btn place-items-center screen-lg-hidden menu-toggle-icon" </span><span class="s0">id=</span><span class="s1">"menu-toggle-icon"</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;i </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"ri-menu-3-line open-menu-icon"</span><span class="s0">&gt;&lt;/i&gt;</span>
+                    <span class="s0">&lt;i </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"ri-close-line close-menu-icon"</span><span class="s0">&gt;&lt;/i&gt;</span>
+                <span class="s0">&lt;/button&gt;</span>
+
+                <span class="s0">&lt;a href=</span><span class="s1">"#" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list-link screen-sm-hidden"</span><span class="s0">&gt;Sign in&lt;/a&gt;</span>
+                <span class="s0">&lt;a href=</span><span class="s1">"#" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"btn sign-up-btn fancy-border screen-sm-hidden"</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;span&gt;Sign up&lt;/span&gt;</span>
+                <span class="s0">&lt;/a&gt;</span>
+            <span class="s0">&lt;/div&gt;</span>
+
+        <span class="s0">&lt;/nav&gt;</span>
+
+    <span class="s0">&lt;/header&gt;</span>
+
+    <span class="s0">&lt;!-- Search -</span><span class="s2">-&gt;</span>
+    <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"search-form-container container" </span><span class="s0">id=</span><span class="s1">"search-form-container"</span><span class="s0">&gt;</span>
+
+        <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"form-container-inner"</span><span class="s0">&gt;</span>
+
+            <span class="s0">&lt;form action=</span><span class="s1">"" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"form"</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;input </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"form-input" </span><span class="s0">type=</span><span class="s1">"text" </span><span class="s0">placeholder=</span><span class="s1">"What are you looking for?"</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;button </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"btn form-btn" </span><span class="s0">type=</span><span class="s1">"submit"</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;i </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"ri-search-line"</span><span class="s0">&gt;&lt;/i&gt;</span>
+                <span class="s0">&lt;/button&gt;</span>
+            <span class="s0">&lt;/form&gt;</span>
+            <span class="s0">&lt;span </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"form-note"</span><span class="s0">&gt;Or press ESC to close.&lt;/span&gt;</span>
+
+        <span class="s0">&lt;/div&gt;</span>
+
+        <span class="s0">&lt;button </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"btn form-close-btn place-items-center" </span><span class="s0">id=</span><span class="s1">"form-close-btn"</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;i </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"ri-close-line"</span><span class="s0">&gt;&lt;/i&gt;</span>
+        <span class="s0">&lt;/button&gt;</span>
+
+    <span class="s0">&lt;/div&gt;</span>
+
+    <span class="s0">&lt;!-- Featured articles -</span><span class="s2">-&gt;</span>
+    <span class="s0">&lt;section </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"featured-articles section section-header-offset"</span><span class="s0">&gt;</span>
+
+        <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"featured-articles-container container d-grid"</span><span class="s0">&gt;</span>
+
+            <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"featured-content d-grid"</span><span class="s0">&gt;</span>
+
+                <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"headline-banner"</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;h3 </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"headline fancy-border"</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;span </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"place-items-center"</span><span class="s0">&gt;Breaking news&lt;/span&gt;</span>
+                    <span class="s0">&lt;/h3&gt;</span>
+                    <span class="s0">&lt;span </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"headline-description"</span><span class="s0">&gt;Apple announces a </span><span class="s3">new </span><span class="s0">partnership...&lt;/span&gt;</span>
+                <span class="s0">&lt;/div&gt;</span>
+
+                <span class="s0">&lt;a href=</span><span class="s1">"./post.html" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article featured-article featured-article-1"</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;img src=</span><span class="s1">"./assets/images/featured/featured-1.jpg" </span><span class="s0">alt=</span><span class="s1">"" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-image"</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;span </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-category"</span><span class="s0">&gt;Technology&lt;/span&gt;</span>
+
+                    <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-data-container"</span><span class="s0">&gt;</span>
+
+                        <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-data"</span><span class="s0">&gt;</span>
+                            <span class="s0">&lt;span&gt;Dec </span><span class="s4">5</span><span class="s0">th </span><span class="s4">2021</span><span class="s0">&lt;/span&gt;</span>
+                            <span class="s0">&lt;span </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-data-spacer"</span><span class="s0">&gt;&lt;/span&gt;</span>
+                            <span class="s0">&lt;span&gt;</span><span class="s4">8 </span><span class="s0">Min read&lt;/span&gt;</span>
+                        <span class="s0">&lt;/div&gt;</span>
+
+                        <span class="s0">&lt;h3 </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"title article-title"</span><span class="s0">&gt;Is VR the future?&lt;/h3&gt;</span>
+
+                    <span class="s0">&lt;/div&gt;</span>
+                <span class="s0">&lt;/a&gt;</span>
+
+                <span class="s0">&lt;a href=</span><span class="s1">"./post.html" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article featured-article featured-article-2"</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;img src=</span><span class="s1">"./assets/images/featured/featured-2.jpg" </span><span class="s0">alt=</span><span class="s1">"" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-image"</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;span </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-category"</span><span class="s0">&gt;Food&lt;/span&gt;</span>
+
+                    <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-data-container"</span><span class="s0">&gt;</span>
+
+                        <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-data"</span><span class="s0">&gt;</span>
+                            <span class="s0">&lt;span&gt;Dec </span><span class="s4">6</span><span class="s0">th </span><span class="s4">2021</span><span class="s0">&lt;/span&gt;</span>
+                            <span class="s0">&lt;span </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-data-spacer"</span><span class="s0">&gt;&lt;/span&gt;</span>
+                            <span class="s0">&lt;span&gt;</span><span class="s4">4 </span><span class="s0">Min read&lt;/span&gt;</span>
+                        <span class="s0">&lt;/div&gt;</span>
+
+                        <span class="s0">&lt;h3 </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"title article-title"</span><span class="s0">&gt;Fine dining </span><span class="s4">101</span><span class="s0">&lt;/h3&gt;</span>
+
+                    <span class="s0">&lt;/div&gt;</span>
+                <span class="s0">&lt;/a&gt;</span>
+
+                <span class="s0">&lt;a href=</span><span class="s1">"./post.html" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article featured-article featured-article-3"</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;img src=</span><span class="s1">"./assets/images/featured/featured-3.jpg" </span><span class="s0">alt=</span><span class="s1">"" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-image"</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;span </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-category"</span><span class="s0">&gt;Health&lt;/span&gt;</span>
+
+                    <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-data-container"</span><span class="s0">&gt;</span>
+
+                        <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-data"</span><span class="s0">&gt;</span>
+                            <span class="s0">&lt;span&gt;Dec </span><span class="s4">5</span><span class="s0">th </span><span class="s4">2021</span><span class="s0">&lt;/span&gt;</span>
+                            <span class="s0">&lt;span </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-data-spacer"</span><span class="s0">&gt;&lt;/span&gt;</span>
+                            <span class="s0">&lt;span&gt;</span><span class="s4">5 </span><span class="s0">Min read&lt;/span&gt;</span>
+                        <span class="s0">&lt;/div&gt;</span>
+
+                        <span class="s0">&lt;h3 </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"title article-title"</span><span class="s0">&gt;Natural fat burner&lt;/h3&gt;</span>
+
+                    <span class="s0">&lt;/div&gt;</span>
+                <span class="s0">&lt;/a&gt;</span>
+
+            <span class="s0">&lt;/div&gt;</span>
+
+            <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"sidebar d-grid"</span><span class="s0">&gt;</span>
+
+                <span class="s0">&lt;h3 </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"title featured-content-title"</span><span class="s0">&gt;Trending news&lt;/h3&gt;</span>
+
+                <span class="s0">&lt;a href=</span><span class="s1">"#" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"trending-news-box"</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"trending-news-img-box"</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;span </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"trending-number place-items-center"</span><span class="s0">&gt;</span><span class="s4">01</span><span class="s0">&lt;/span&gt;</span>
+                        <span class="s0">&lt;img src=</span><span class="s1">"./assets/images/trending/trending_1.jpg" </span><span class="s0">alt=</span><span class="s1">"" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-image"</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;/div&gt;</span>
+
+                    <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"trending-news-data"</span><span class="s0">&gt;</span>
+
+                        <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-data"</span><span class="s0">&gt;</span>
+                            <span class="s0">&lt;span&gt;</span><span class="s4">23 </span><span class="s0">Dec </span><span class="s4">2021</span><span class="s0">&lt;/span&gt;</span>
+                            <span class="s0">&lt;span </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-data-spacer"</span><span class="s0">&gt;&lt;/span&gt;</span>
+                            <span class="s0">&lt;span&gt;</span><span class="s4">3 </span><span class="s0">Min read&lt;/span&gt;</span>
+                        <span class="s0">&lt;/div&gt;</span>
+
+                        <span class="s0">&lt;h3 </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"title article-title"</span><span class="s0">&gt;Sample article title&lt;/h3&gt;</span>
+
+                    <span class="s0">&lt;/div&gt;</span>
+                <span class="s0">&lt;/a&gt;</span>
+
+                <span class="s0">&lt;a href=</span><span class="s1">"#" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"trending-news-box"</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"trending-news-img-box"</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;span </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"trending-number place-items-center"</span><span class="s0">&gt;</span><span class="s4">02</span><span class="s0">&lt;/span&gt;</span>
+                        <span class="s0">&lt;img src=</span><span class="s1">"./assets/images/trending/trending_2.jpg" </span><span class="s0">alt=</span><span class="s1">"" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-image"</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;/div&gt;</span>
+
+                    <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"trending-news-data"</span><span class="s0">&gt;</span>
+
+                        <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-data"</span><span class="s0">&gt;</span>
+                            <span class="s0">&lt;span&gt;</span><span class="s4">23 </span><span class="s0">Dec </span><span class="s4">2021</span><span class="s0">&lt;/span&gt;</span>
+                            <span class="s0">&lt;span </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-data-spacer"</span><span class="s0">&gt;&lt;/span&gt;</span>
+                            <span class="s0">&lt;span&gt;</span><span class="s4">3 </span><span class="s0">Min read&lt;/span&gt;</span>
+                        <span class="s0">&lt;/div&gt;</span>
+
+                        <span class="s0">&lt;h3 </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"title article-title"</span><span class="s0">&gt;Sample article title&lt;/h3&gt;</span>
+
+                    <span class="s0">&lt;/div&gt;</span>
+                <span class="s0">&lt;/a&gt;</span>
+
+                <span class="s0">&lt;a href=</span><span class="s1">"#" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"trending-news-box"</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"trending-news-img-box"</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;span </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"trending-number place-items-center"</span><span class="s0">&gt;</span><span class="s4">03</span><span class="s0">&lt;/span&gt;</span>
+                        <span class="s0">&lt;img src=</span><span class="s1">"./assets/images/trending/trending_3.jpg" </span><span class="s0">alt=</span><span class="s1">"" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-image"</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;/div&gt;</span>
+
+                    <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"trending-news-data"</span><span class="s0">&gt;</span>
+
+                        <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-data"</span><span class="s0">&gt;</span>
+                            <span class="s0">&lt;span&gt;</span><span class="s4">23 </span><span class="s0">Dec </span><span class="s4">2021</span><span class="s0">&lt;/span&gt;</span>
+                            <span class="s0">&lt;span </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-data-spacer"</span><span class="s0">&gt;&lt;/span&gt;</span>
+                            <span class="s0">&lt;span&gt;</span><span class="s4">3 </span><span class="s0">Min read&lt;/span&gt;</span>
+                        <span class="s0">&lt;/div&gt;</span>
+
+                        <span class="s0">&lt;h3 </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"title article-title"</span><span class="s0">&gt;Sample article title&lt;/h3&gt;</span>
+
+                    <span class="s0">&lt;/div&gt;</span>
+                <span class="s0">&lt;/a&gt;</span>
+
+                <span class="s0">&lt;a href=</span><span class="s1">"#" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"trending-news-box"</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"trending-news-img-box"</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;span </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"trending-number place-items-center"</span><span class="s0">&gt;</span><span class="s4">04</span><span class="s0">&lt;/span&gt;</span>
+                        <span class="s0">&lt;img src=</span><span class="s1">"./assets/images/trending/trending_4.jpg" </span><span class="s0">alt=</span><span class="s1">"" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-image"</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;/div&gt;</span>
+
+                    <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"trending-news-data"</span><span class="s0">&gt;</span>
+
+                        <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-data"</span><span class="s0">&gt;</span>
+                            <span class="s0">&lt;span&gt;</span><span class="s4">23 </span><span class="s0">Dec </span><span class="s4">2021</span><span class="s0">&lt;/span&gt;</span>
+                            <span class="s0">&lt;span </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-data-spacer"</span><span class="s0">&gt;&lt;/span&gt;</span>
+                            <span class="s0">&lt;span&gt;</span><span class="s4">3 </span><span class="s0">Min read&lt;/span&gt;</span>
+                        <span class="s0">&lt;/div&gt;</span>
+
+                        <span class="s0">&lt;h3 </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"title article-title"</span><span class="s0">&gt;Sample article title&lt;/h3&gt;</span>
+
+                    <span class="s0">&lt;/div&gt;</span>
+                <span class="s0">&lt;/a&gt;</span>
+
+                <span class="s0">&lt;a href=</span><span class="s1">"#" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"trending-news-box"</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"trending-news-img-box"</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;span </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"trending-number place-items-center"</span><span class="s0">&gt;</span><span class="s4">05</span><span class="s0">&lt;/span&gt;</span>
+                        <span class="s0">&lt;img src=</span><span class="s1">"./assets/images/trending/trending_5.jpg" </span><span class="s0">alt=</span><span class="s1">"" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-image"</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;/div&gt;</span>
+
+                    <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"trending-news-data"</span><span class="s0">&gt;</span>
+
+                        <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-data"</span><span class="s0">&gt;</span>
+                            <span class="s0">&lt;span&gt;</span><span class="s4">23 </span><span class="s0">Dec </span><span class="s4">2021</span><span class="s0">&lt;/span&gt;</span>
+                            <span class="s0">&lt;span </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-data-spacer"</span><span class="s0">&gt;&lt;/span&gt;</span>
+                            <span class="s0">&lt;span&gt;</span><span class="s4">3 </span><span class="s0">Min read&lt;/span&gt;</span>
+                        <span class="s0">&lt;/div&gt;</span>
+
+                        <span class="s0">&lt;h3 </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"title article-title"</span><span class="s0">&gt;Sample article title&lt;/h3&gt;</span>
+
+                    <span class="s0">&lt;/div&gt;</span>
+                <span class="s0">&lt;/a&gt;</span>
+
+            <span class="s0">&lt;/div&gt;</span>
+
+        <span class="s0">&lt;/div&gt;</span>
+
+    <span class="s0">&lt;/section&gt;</span>
+
+    <span class="s0">&lt;!-- Quick read -</span><span class="s2">-&gt;</span>
+    <span class="s0">&lt;section </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"quick-read section"</span><span class="s0">&gt;</span>
+
+        <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"container"</span><span class="s0">&gt;</span>
+
+            <span class="s0">&lt;h2 </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"title section-title" </span><span class="s0">data-name=</span><span class="s1">"Quick read"</span><span class="s0">&gt;Quick read&lt;/h2&gt;</span>
+            <span class="s0">&lt;!-- Slider main container -</span><span class="s2">-&gt;</span>
+            <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"swiper"</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;!-- Additional required wrapper -</span><span class="s2">-&gt;</span>
+                <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"swiper-wrapper"</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;!-- Slides -</span><span class="s2">-&gt;</span>
+                    <span class="s0">&lt;a href=</span><span class="s1">"#" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article swiper-slide"</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;img src=</span><span class="s1">"./assets/images/quick_read/quick_read_1.jpg" </span><span class="s0">alt=</span><span class="s1">"" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-image"</span><span class="s0">&gt;</span>
+
+                        <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-data-container"</span><span class="s0">&gt;</span>
+                            <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-data"</span><span class="s0">&gt;</span>
+                                <span class="s0">&lt;span&gt;</span><span class="s4">23 </span><span class="s0">Dec </span><span class="s4">2021</span><span class="s0">&lt;/span&gt;</span>
+                                <span class="s0">&lt;span </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-data-spacer"</span><span class="s0">&gt;&lt;/span&gt;</span>
+                                <span class="s0">&lt;span&gt;</span><span class="s4">3 </span><span class="s0">Min read&lt;/span&gt;</span>
+                            <span class="s0">&lt;/div&gt;</span>
+                            <span class="s0">&lt;h3 </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"title article-title"</span><span class="s0">&gt;Sample article title&lt;/h3&gt;</span>
+                        <span class="s0">&lt;/div&gt;</span>
+                    <span class="s0">&lt;/a&gt;</span>
+                    <span class="s0">&lt;!-- Slides -</span><span class="s2">-&gt;</span>
+                    <span class="s0">&lt;a href=</span><span class="s1">"#" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article swiper-slide"</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;img src=</span><span class="s1">"./assets/images/quick_read/quick_read_2.jpg" </span><span class="s0">alt=</span><span class="s1">"" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-image"</span><span class="s0">&gt;</span>
+
+                        <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-data-container"</span><span class="s0">&gt;</span>
+                            <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-data"</span><span class="s0">&gt;</span>
+                                <span class="s0">&lt;span&gt;</span><span class="s4">23 </span><span class="s0">Dec </span><span class="s4">2021</span><span class="s0">&lt;/span&gt;</span>
+                                <span class="s0">&lt;span </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-data-spacer"</span><span class="s0">&gt;&lt;/span&gt;</span>
+                                <span class="s0">&lt;span&gt;</span><span class="s4">3 </span><span class="s0">Min read&lt;/span&gt;</span>
+                            <span class="s0">&lt;/div&gt;</span>
+                            <span class="s0">&lt;h3 </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"title article-title"</span><span class="s0">&gt;Sample article title&lt;/h3&gt;</span>
+                        <span class="s0">&lt;/div&gt;</span>
+                    <span class="s0">&lt;/a&gt;</span>
+                    <span class="s0">&lt;!-- Slides -</span><span class="s2">-&gt;</span>
+                    <span class="s0">&lt;a href=</span><span class="s1">"#" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article swiper-slide"</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;img src=</span><span class="s1">"./assets/images/quick_read/quick_read_3.jpg" </span><span class="s0">alt=</span><span class="s1">"" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-image"</span><span class="s0">&gt;</span>
+
+                        <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-data-container"</span><span class="s0">&gt;</span>
+                            <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-data"</span><span class="s0">&gt;</span>
+                                <span class="s0">&lt;span&gt;</span><span class="s4">23 </span><span class="s0">Dec </span><span class="s4">2021</span><span class="s0">&lt;/span&gt;</span>
+                                <span class="s0">&lt;span </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-data-spacer"</span><span class="s0">&gt;&lt;/span&gt;</span>
+                                <span class="s0">&lt;span&gt;</span><span class="s4">3 </span><span class="s0">Min read&lt;/span&gt;</span>
+                            <span class="s0">&lt;/div&gt;</span>
+                            <span class="s0">&lt;h3 </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"title article-title"</span><span class="s0">&gt;Sample article title&lt;/h3&gt;</span>
+                        <span class="s0">&lt;/div&gt;</span>
+                    <span class="s0">&lt;/a&gt;</span>
+                    <span class="s0">&lt;!-- Slides -</span><span class="s2">-&gt;</span>
+                    <span class="s0">&lt;a href=</span><span class="s1">"#" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article swiper-slide"</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;img src=</span><span class="s1">"./assets/images/quick_read/quick_read_4.jpg" </span><span class="s0">alt=</span><span class="s1">"" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-image"</span><span class="s0">&gt;</span>
+
+                        <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-data-container"</span><span class="s0">&gt;</span>
+                            <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-data"</span><span class="s0">&gt;</span>
+                                <span class="s0">&lt;span&gt;</span><span class="s4">23 </span><span class="s0">Dec </span><span class="s4">2021</span><span class="s0">&lt;/span&gt;</span>
+                                <span class="s0">&lt;span </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-data-spacer"</span><span class="s0">&gt;&lt;/span&gt;</span>
+                                <span class="s0">&lt;span&gt;</span><span class="s4">3 </span><span class="s0">Min read&lt;/span&gt;</span>
+                            <span class="s0">&lt;/div&gt;</span>
+                            <span class="s0">&lt;h3 </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"title article-title"</span><span class="s0">&gt;Sample article title&lt;/h3&gt;</span>
+                        <span class="s0">&lt;/div&gt;</span>
+                    <span class="s0">&lt;/a&gt;</span>
+                    <span class="s0">&lt;!-- Slides -</span><span class="s2">-&gt;</span>
+                    <span class="s0">&lt;a href=</span><span class="s1">"#" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article swiper-slide"</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;img src=</span><span class="s1">"./assets/images/quick_read/quick_read_5.jpg" </span><span class="s0">alt=</span><span class="s1">"" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-image"</span><span class="s0">&gt;</span>
+
+                        <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-data-container"</span><span class="s0">&gt;</span>
+                            <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-data"</span><span class="s0">&gt;</span>
+                                <span class="s0">&lt;span&gt;</span><span class="s4">23 </span><span class="s0">Dec </span><span class="s4">2021</span><span class="s0">&lt;/span&gt;</span>
+                                <span class="s0">&lt;span </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-data-spacer"</span><span class="s0">&gt;&lt;/span&gt;</span>
+                                <span class="s0">&lt;span&gt;</span><span class="s4">3 </span><span class="s0">Min read&lt;/span&gt;</span>
+                            <span class="s0">&lt;/div&gt;</span>
+                            <span class="s0">&lt;h3 </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"title article-title"</span><span class="s0">&gt;Sample article title&lt;/h3&gt;</span>
+                        <span class="s0">&lt;/div&gt;</span>
+                    <span class="s0">&lt;/a&gt;</span>
+                    <span class="s0">&lt;!-- Slides -</span><span class="s2">-&gt;</span>
+                    <span class="s0">&lt;a href=</span><span class="s1">"#" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article swiper-slide"</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;img src=</span><span class="s1">"./assets/images/quick_read/quick_read_6.jpg" </span><span class="s0">alt=</span><span class="s1">"" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-image"</span><span class="s0">&gt;</span>
+
+                        <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-data-container"</span><span class="s0">&gt;</span>
+                            <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-data"</span><span class="s0">&gt;</span>
+                                <span class="s0">&lt;span&gt;</span><span class="s4">23 </span><span class="s0">Dec </span><span class="s4">2021</span><span class="s0">&lt;/span&gt;</span>
+                                <span class="s0">&lt;span </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-data-spacer"</span><span class="s0">&gt;&lt;/span&gt;</span>
+                                <span class="s0">&lt;span&gt;</span><span class="s4">3 </span><span class="s0">Min read&lt;/span&gt;</span>
+                            <span class="s0">&lt;/div&gt;</span>
+                            <span class="s0">&lt;h3 </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"title article-title"</span><span class="s0">&gt;Sample article title&lt;/h3&gt;</span>
+                        <span class="s0">&lt;/div&gt;</span>
+                    <span class="s0">&lt;/a&gt;</span>
+                <span class="s0">&lt;/div&gt;</span>
+                <span class="s0">&lt;!-- Navigation buttons -</span><span class="s2">-&gt;</span>
+                <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"swiper-button-prev swiper-controls"</span><span class="s0">&gt;&lt;/div&gt;</span>
+                <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"swiper-button-next swiper-controls"</span><span class="s0">&gt;&lt;/div&gt;</span>
+                <span class="s0">&lt;!-- Pagination -</span><span class="s2">-&gt;</span>
+                <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"swiper-pagination"</span><span class="s0">&gt;&lt;/div&gt;</span>
+            <span class="s0">&lt;/div&gt;</span>
+
+        <span class="s0">&lt;/div&gt;</span>
+
+    <span class="s0">&lt;/section&gt;</span>
+
+    <span class="s0">&lt;!-- Older posts -</span><span class="s2">-&gt;</span>
+    <span class="s0">&lt;section </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"older-posts section"</span><span class="s0">&gt;</span>
+
+        <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"container"</span><span class="s0">&gt;</span>
+
+            <span class="s0">&lt;h2 </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"title section-title" </span><span class="s0">data-name=</span><span class="s1">"Older posts"</span><span class="s0">&gt;Older posts&lt;/h2&gt;</span>
+
+            <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"older-posts-grid-wrapper d-grid"</span><span class="s0">&gt;</span>
+
+                <span class="s0">&lt;a href=</span><span class="s1">"#" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article d-grid"</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"older-posts-article-image-wrapper"</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;img src=</span><span class="s1">"./assets/images/older_posts/older_posts_1.jpg" </span><span class="s0">alt=</span><span class="s1">"" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-image"</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;/div&gt;</span>
+
+                    <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-data-container"</span><span class="s0">&gt;</span>
+
+                        <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-data"</span><span class="s0">&gt;</span>
+                            <span class="s0">&lt;span&gt;</span><span class="s4">23 </span><span class="s0">Dec </span><span class="s4">2021</span><span class="s0">&lt;/span&gt;</span>
+                            <span class="s0">&lt;span </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-data-spacer"</span><span class="s0">&gt;&lt;/span&gt;</span>
+                            <span class="s0">&lt;span&gt;</span><span class="s4">3 </span><span class="s0">Min read&lt;/span&gt;</span>
+                        <span class="s0">&lt;/div&gt;</span>
+
+                        <span class="s0">&lt;h3 </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"title article-title"</span><span class="s0">&gt;Sample article title&lt;/h3&gt;</span>
+                        <span class="s0">&lt;p </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-description"</span><span class="s0">&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique a tempore sapiente corporis, eaque fuga placeat odit voluptatibus.&lt;/p&gt;</span>
+
+                    <span class="s0">&lt;/div&gt;</span>
+                <span class="s0">&lt;/a&gt;</span>
+
+                <span class="s0">&lt;a href=</span><span class="s1">"#" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article d-grid"</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"older-posts-article-image-wrapper"</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;img src=</span><span class="s1">"./assets/images/older_posts/older_posts_2.jpg" </span><span class="s0">alt=</span><span class="s1">"" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-image"</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;/div&gt;</span>
+
+                    <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-data-container"</span><span class="s0">&gt;</span>
+
+                        <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-data"</span><span class="s0">&gt;</span>
+                            <span class="s0">&lt;span&gt;</span><span class="s4">23 </span><span class="s0">Dec </span><span class="s4">2021</span><span class="s0">&lt;/span&gt;</span>
+                            <span class="s0">&lt;span </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-data-spacer"</span><span class="s0">&gt;&lt;/span&gt;</span>
+                            <span class="s0">&lt;span&gt;</span><span class="s4">3 </span><span class="s0">Min read&lt;/span&gt;</span>
+                        <span class="s0">&lt;/div&gt;</span>
+
+                        <span class="s0">&lt;h3 </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"title article-title"</span><span class="s0">&gt;Sample article title&lt;/h3&gt;</span>
+                        <span class="s0">&lt;p </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-description"</span><span class="s0">&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique a tempore sapiente corporis, eaque fuga placeat odit voluptatibus.&lt;/p&gt;</span>
+
+                    <span class="s0">&lt;/div&gt;</span>
+                <span class="s0">&lt;/a&gt;</span>
+
+                <span class="s0">&lt;a href=</span><span class="s1">"#" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article d-grid"</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"older-posts-article-image-wrapper"</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;img src=</span><span class="s1">"./assets/images/older_posts/older_posts_3.jpg" </span><span class="s0">alt=</span><span class="s1">"" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-image"</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;/div&gt;</span>
+
+                    <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-data-container"</span><span class="s0">&gt;</span>
+
+                        <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-data"</span><span class="s0">&gt;</span>
+                            <span class="s0">&lt;span&gt;</span><span class="s4">23 </span><span class="s0">Dec </span><span class="s4">2021</span><span class="s0">&lt;/span&gt;</span>
+                            <span class="s0">&lt;span </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-data-spacer"</span><span class="s0">&gt;&lt;/span&gt;</span>
+                            <span class="s0">&lt;span&gt;</span><span class="s4">3 </span><span class="s0">Min read&lt;/span&gt;</span>
+                        <span class="s0">&lt;/div&gt;</span>
+
+                        <span class="s0">&lt;h3 </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"title article-title"</span><span class="s0">&gt;Sample article title&lt;/h3&gt;</span>
+                        <span class="s0">&lt;p </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-description"</span><span class="s0">&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique a tempore sapiente corporis, eaque fuga placeat odit voluptatibus.&lt;/p&gt;</span>
+
+                    <span class="s0">&lt;/div&gt;</span>
+                <span class="s0">&lt;/a&gt;</span>
+
+                <span class="s0">&lt;a href=</span><span class="s1">"#" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article d-grid"</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"older-posts-article-image-wrapper"</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;img src=</span><span class="s1">"./assets/images/older_posts/older_posts_4.jpg" </span><span class="s0">alt=</span><span class="s1">"" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-image"</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;/div&gt;</span>
+
+                    <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-data-container"</span><span class="s0">&gt;</span>
+
+                        <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-data"</span><span class="s0">&gt;</span>
+                            <span class="s0">&lt;span&gt;</span><span class="s4">23 </span><span class="s0">Dec </span><span class="s4">2021</span><span class="s0">&lt;/span&gt;</span>
+                            <span class="s0">&lt;span </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-data-spacer"</span><span class="s0">&gt;&lt;/span&gt;</span>
+                            <span class="s0">&lt;span&gt;</span><span class="s4">3 </span><span class="s0">Min read&lt;/span&gt;</span>
+                        <span class="s0">&lt;/div&gt;</span>
+
+                        <span class="s0">&lt;h3 </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"title article-title"</span><span class="s0">&gt;Sample article title&lt;/h3&gt;</span>
+                        <span class="s0">&lt;p </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-description"</span><span class="s0">&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique a tempore sapiente corporis, eaque fuga placeat odit voluptatibus.&lt;/p&gt;</span>
+
+                    <span class="s0">&lt;/div&gt;</span>
+                <span class="s0">&lt;/a&gt;</span>
+
+                <span class="s0">&lt;a href=</span><span class="s1">"#" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article d-grid"</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"older-posts-article-image-wrapper"</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;img src=</span><span class="s1">"./assets/images/older_posts/older_posts_5.jpg" </span><span class="s0">alt=</span><span class="s1">"" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-image"</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;/div&gt;</span>
+
+                    <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-data-container"</span><span class="s0">&gt;</span>
+
+                        <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-data"</span><span class="s0">&gt;</span>
+                            <span class="s0">&lt;span&gt;</span><span class="s4">23 </span><span class="s0">Dec </span><span class="s4">2021</span><span class="s0">&lt;/span&gt;</span>
+                            <span class="s0">&lt;span </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-data-spacer"</span><span class="s0">&gt;&lt;/span&gt;</span>
+                            <span class="s0">&lt;span&gt;</span><span class="s4">3 </span><span class="s0">Min read&lt;/span&gt;</span>
+                        <span class="s0">&lt;/div&gt;</span>
+
+                        <span class="s0">&lt;h3 </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"title article-title"</span><span class="s0">&gt;Sample article title&lt;/h3&gt;</span>
+                        <span class="s0">&lt;p </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-description"</span><span class="s0">&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique a tempore sapiente corporis, eaque fuga placeat odit voluptatibus.&lt;/p&gt;</span>
+
+                    <span class="s0">&lt;/div&gt;</span>
+                <span class="s0">&lt;/a&gt;</span>
+
+                <span class="s0">&lt;a href=</span><span class="s1">"#" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article d-grid"</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"older-posts-article-image-wrapper"</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;img src=</span><span class="s1">"./assets/images/older_posts/older_posts_6.jpg" </span><span class="s0">alt=</span><span class="s1">"" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-image"</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;/div&gt;</span>
+
+                    <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-data-container"</span><span class="s0">&gt;</span>
+
+                        <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-data"</span><span class="s0">&gt;</span>
+                            <span class="s0">&lt;span&gt;</span><span class="s4">23 </span><span class="s0">Dec </span><span class="s4">2021</span><span class="s0">&lt;/span&gt;</span>
+                            <span class="s0">&lt;span </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-data-spacer"</span><span class="s0">&gt;&lt;/span&gt;</span>
+                            <span class="s0">&lt;span&gt;</span><span class="s4">3 </span><span class="s0">Min read&lt;/span&gt;</span>
+                        <span class="s0">&lt;/div&gt;</span>
+
+                        <span class="s0">&lt;h3 </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"title article-title"</span><span class="s0">&gt;Sample article title&lt;/h3&gt;</span>
+                        <span class="s0">&lt;p </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-description"</span><span class="s0">&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique a tempore sapiente corporis, eaque fuga placeat odit voluptatibus.&lt;/p&gt;</span>
+
+                    <span class="s0">&lt;/div&gt;</span>
+                <span class="s0">&lt;/a&gt;</span>
+
+            <span class="s0">&lt;/div&gt;</span>
+
+            <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"see-more-container"</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;a href=</span><span class="s1">"#" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"btn see-more-btn place-items-center"</span><span class="s0">&gt;See more &lt;i </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"ri-arrow-right-s-line"</span><span class="s0">&gt;&lt;/i&gt;&lt;/i&gt;&lt;/a&gt;</span>
+            <span class="s0">&lt;/div&gt;</span>
+
+        <span class="s0">&lt;/div&gt;</span>
+
+    <span class="s0">&lt;/section&gt;</span>
+
+    <span class="s0">&lt;!-- Popular tags -</span><span class="s2">-&gt;</span>
+    <span class="s0">&lt;section </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"popular-tags section"</span><span class="s0">&gt;</span>
+
+        <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"container"</span><span class="s0">&gt;</span>
+
+            <span class="s0">&lt;h2 </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"title section-title" </span><span class="s0">data-name=</span><span class="s1">"Popular tags"</span><span class="s0">&gt;Popular tags&lt;/h2&gt;</span>
+
+            <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"popular-tags-container d-grid"</span><span class="s0">&gt;</span>
+
+                <span class="s0">&lt;a href=</span><span class="s1">"#" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article"</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;span </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"tag-name"</span><span class="s0">&gt;#Travel&lt;/span&gt;</span>
+                    <span class="s0">&lt;img src=</span><span class="s1">"./assets/images/tags/travel-tag.jpg" </span><span class="s0">alt=</span><span class="s1">"" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-image"</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;/a&gt;</span>
+
+                <span class="s0">&lt;a href=</span><span class="s1">"#" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article"</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;span </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"tag-name"</span><span class="s0">&gt;#Food&lt;/span&gt;</span>
+                    <span class="s0">&lt;img src=</span><span class="s1">"./assets/images/tags/food-tag.jpg" </span><span class="s0">alt=</span><span class="s1">"" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-image"</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;/a&gt;</span>
+
+                <span class="s0">&lt;a href=</span><span class="s1">"#" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article"</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;span </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"tag-name"</span><span class="s0">&gt;#Technology&lt;/span&gt;</span>
+                    <span class="s0">&lt;img src=</span><span class="s1">"./assets/images/tags/technology-tag.jpg" </span><span class="s0">alt=</span><span class="s1">"" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-image"</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;/a&gt;</span>
+
+                <span class="s0">&lt;a href=</span><span class="s1">"#" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article"</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;span </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"tag-name"</span><span class="s0">&gt;#Health&lt;/span&gt;</span>
+                    <span class="s0">&lt;img src=</span><span class="s1">"./assets/images/tags/health-tag.jpg" </span><span class="s0">alt=</span><span class="s1">"" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-image"</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;/a&gt;</span>
+
+                <span class="s0">&lt;a href=</span><span class="s1">"#" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article"</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;span </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"tag-name"</span><span class="s0">&gt;#Nature&lt;/span&gt;</span>
+                    <span class="s0">&lt;img src=</span><span class="s1">"./assets/images/tags/nature-tag.jpg" </span><span class="s0">alt=</span><span class="s1">"" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-image"</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;/a&gt;</span>
+
+                <span class="s0">&lt;a href=</span><span class="s1">"#" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article"</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;span </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"tag-name"</span><span class="s0">&gt;#Fitness&lt;/span&gt;</span>
+                    <span class="s0">&lt;img src=</span><span class="s1">"./assets/images/tags/fitness-tag.jpg" </span><span class="s0">alt=</span><span class="s1">"" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"article-image"</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;/a&gt;</span>
+
+            <span class="s0">&lt;/div&gt;</span>
+
+        <span class="s0">&lt;/div&gt;</span>
+    <span class="s0">&lt;/section&gt;</span>
+
+    <span class="s0">&lt;!-- Newsletter -</span><span class="s2">-&gt;</span>
+    <span class="s0">&lt;section </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"newsletter section"</span><span class="s0">&gt;</span>
+
+        <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"container"</span><span class="s0">&gt;</span>
+
+            <span class="s0">&lt;h2 </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"title section-title" </span><span class="s0">data-name=</span><span class="s1">"Newsletter"</span><span class="s0">&gt;Newsletter&lt;/h2&gt;</span>
+
+            <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"form-container-inner"</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;h6 </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"title newsletter-title"</span><span class="s0">&gt;Subscribe to NewsFlash&lt;/h6&gt;</span>
+                <span class="s0">&lt;p </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"newsletter-description"</span><span class="s0">&gt;Lorem ipsum dolor sit amet consectetur adipisicing quaerat dignissimos.&lt;/p&gt;</span>
+
+                <span class="s0">&lt;form action=</span><span class="s1">"" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"form"</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;input </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"form-input" </span><span class="s0">type=</span><span class="s1">"text" </span><span class="s0">placeholder=</span><span class="s1">"Enter your email address"</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;button </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"btn form-btn" </span><span class="s0">type=</span><span class="s1">"submit"</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;i </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"ri-mail-send-line"</span><span class="s0">&gt;&lt;/i&gt;</span>
+                    <span class="s0">&lt;/button&gt;</span>
+                <span class="s0">&lt;/form&gt;</span>
+
+            <span class="s0">&lt;/div&gt;</span>
+
+        <span class="s0">&lt;/div&gt;</span>
+
+    <span class="s0">&lt;/section&gt;</span>
+
+    <span class="s0">&lt;!-- Footer -</span><span class="s2">-&gt;</span>
+    <span class="s0">&lt;footer </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"footer section"</span><span class="s0">&gt;</span>
+
+        <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"footer-container container d-grid"</span><span class="s0">&gt;</span>
+
+            <span class="s0">&lt;div </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"company-data"</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;a href=</span><span class="s1">"./index.html"</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;h2 </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"logo"</span><span class="s0">&gt;NewsFlash&lt;/h2&gt;</span>
+                <span class="s0">&lt;/a&gt;</span>
+                <span class="s0">&lt;p </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"company-description"</span><span class="s0">&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, iure. Harum, animi dolores, nam, ad magni expedita.&lt;/p&gt;</span>
+
+                <span class="s0">&lt;ul </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list social-media"</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;li </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list-item"</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;a href=</span><span class="s1">"#" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list-link"</span><span class="s0">&gt;&lt;i </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"ri-instagram-line"</span><span class="s0">&gt;&lt;/i&gt;&lt;/a&gt;</span>
+                    <span class="s0">&lt;/li&gt;</span>
+                    <span class="s0">&lt;li </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list-item"</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;a href=</span><span class="s1">"#" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list-link"</span><span class="s0">&gt;&lt;i </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"ri-facebook-circle-line"</span><span class="s0">&gt;&lt;/i&gt;&lt;/a&gt;</span>
+                    <span class="s0">&lt;/li&gt;</span>
+                    <span class="s0">&lt;li </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list-item"</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;a href=</span><span class="s1">"#" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list-link"</span><span class="s0">&gt;&lt;i </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"ri-twitter-line"</span><span class="s0">&gt;&lt;/i&gt;&lt;/a&gt;</span>
+                    <span class="s0">&lt;/li&gt;</span>
+                    <span class="s0">&lt;li </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list-item"</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;a href=</span><span class="s1">"#" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list-link"</span><span class="s0">&gt;&lt;i </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"ri-pinterest-line"</span><span class="s0">&gt;&lt;/i&gt;&lt;/a&gt;</span>
+                    <span class="s0">&lt;/li&gt;</span>
+                <span class="s0">&lt;/ul&gt;</span>
+
+                <span class="s0">&lt;span </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"copyright-notice"</span><span class="s0">&gt;&amp;copy;</span><span class="s4">2021 </span><span class="s0">NewsFlash. All rights reserved.&lt;/span&gt;</span>
+            <span class="s0">&lt;/div&gt;</span>
+
+            <span class="s0">&lt;div&gt;</span>
+                <span class="s0">&lt;h6 </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"title footer-title"</span><span class="s0">&gt;Categories&lt;/h6&gt;</span>
+
+                <span class="s0">&lt;ul </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"footer-list list"</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;li </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list-item"</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;a href=</span><span class="s1">"#" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list-link"</span><span class="s0">&gt;Travel&lt;/a&gt;</span>
+                    <span class="s0">&lt;/li&gt;</span>
+                    <span class="s0">&lt;li </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list-item"</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;a href=</span><span class="s1">"#" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list-link"</span><span class="s0">&gt;Food&lt;/a&gt;</span>
+                    <span class="s0">&lt;/li&gt;</span>
+                    <span class="s0">&lt;li </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list-item"</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;a href=</span><span class="s1">"#" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list-link"</span><span class="s0">&gt;Technology&lt;/a&gt;</span>
+                    <span class="s0">&lt;/li&gt;</span>
+                    <span class="s0">&lt;li </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list-item"</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;a href=</span><span class="s1">"#" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list-link"</span><span class="s0">&gt;Health&lt;/a&gt;</span>
+                    <span class="s0">&lt;/li&gt;</span>
+                    <span class="s0">&lt;li </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list-item"</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;a href=</span><span class="s1">"#" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list-link"</span><span class="s0">&gt;Nature&lt;/a&gt;</span>
+                    <span class="s0">&lt;/li&gt;</span>
+                    <span class="s0">&lt;li </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list-item"</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;a href=</span><span class="s1">"#" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list-link"</span><span class="s0">&gt;Fitness&lt;/a&gt;</span>
+                    <span class="s0">&lt;/li&gt;</span>
+                <span class="s0">&lt;/ul&gt;</span>
+
+            <span class="s0">&lt;/div&gt;</span>
+
+            <span class="s0">&lt;div&gt;</span>
+                <span class="s0">&lt;h6 </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"title footer-title"</span><span class="s0">&gt;Useful links&lt;/h6&gt;</span>
+
+                <span class="s0">&lt;ul </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"footer-list list"</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;li </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list-item"</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;a href=</span><span class="s1">"#" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list-link"</span><span class="s0">&gt;Home&lt;/a&gt;</span>
+                    <span class="s0">&lt;/li&gt;</span>
+                    <span class="s0">&lt;li </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list-item"</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;a href=</span><span class="s1">"#" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list-link"</span><span class="s0">&gt;Elements&lt;/a&gt;</span>
+                    <span class="s0">&lt;/li&gt;</span>
+                    <span class="s0">&lt;li </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list-item"</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;a href=</span><span class="s1">"#" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list-link"</span><span class="s0">&gt;Tags&lt;/a&gt;</span>
+                    <span class="s0">&lt;/li&gt;</span>
+                    <span class="s0">&lt;li </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list-item"</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;a href=</span><span class="s1">"#" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list-link"</span><span class="s0">&gt;Authors&lt;/a&gt;</span>
+                    <span class="s0">&lt;/li&gt;</span>
+                    <span class="s0">&lt;li </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list-item"</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;a href=</span><span class="s1">"#" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list-link"</span><span class="s0">&gt;Membership&lt;/a&gt;</span>
+                    <span class="s0">&lt;/li&gt;</span>
+                <span class="s0">&lt;/ul&gt;</span>
+
+            <span class="s0">&lt;/div&gt;</span>
+
+            <span class="s0">&lt;div&gt;</span>
+                <span class="s0">&lt;h6 </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"title footer-title"</span><span class="s0">&gt;Company&lt;/h6&gt;</span>
+
+                <span class="s0">&lt;ul </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"footer-list list"</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;li </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list-item"</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;a href=</span><span class="s1">"#" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list-link"</span><span class="s0">&gt;Contact us&lt;/a&gt;</span>
+                    <span class="s0">&lt;/li&gt;</span>
+                    <span class="s0">&lt;li </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list-item"</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;a href=</span><span class="s1">"#" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list-link"</span><span class="s0">&gt;F.A.Q&lt;/a&gt;</span>
+                    <span class="s0">&lt;/li&gt;</span>
+                    <span class="s0">&lt;li </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list-item"</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;a href=</span><span class="s1">"#" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list-link"</span><span class="s0">&gt;Careers&lt;/a&gt;</span>
+                    <span class="s0">&lt;/li&gt;</span>
+                    <span class="s0">&lt;li </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list-item"</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;a href=</span><span class="s1">"#" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list-link"</span><span class="s0">&gt;Authors&lt;/a&gt;</span>
+                    <span class="s0">&lt;/li&gt;</span>
+                    <span class="s0">&lt;li </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list-item"</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;a href=</span><span class="s1">"#" </span><span class="s3">class</span><span class="s0">=</span><span class="s1">"list-link"</span><span class="s0">&gt;Memberships&lt;/a&gt;</span>
+                    <span class="s0">&lt;/li&gt;</span>
+                <span class="s0">&lt;/ul&gt;</span>
+
+            <span class="s0">&lt;/div&gt;</span>
+
+        <span class="s0">&lt;/div&gt;</span>
+
+    <span class="s0">&lt;/footer&gt;</span>
+
+    <span class="s0">&lt;!-- Swiper.js -</span><span class="s2">-&gt;</span>
+    <span class="s0">&lt;script src=</span><span class="s1">"./assets/js/swiper-bundle.min.js"</span><span class="s0">&gt;&lt;/script&gt;</span>
+    <span class="s0">&lt;!-- Custom script -</span><span class="s2">-&gt;</span>
+    <span class="s0">&lt;script src=</span><span class="s1">"./assets/js/main.js"</span><span class="s0">&gt;&lt;/script&gt;</span>
+<span class="s0">&lt;/body&gt;</span>
+<span class="s0">&lt;/html&gt;</span></pre>
+
+</body></html>
