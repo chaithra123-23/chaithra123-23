@@ -1,0 +1,111 @@
+
+<!-- saved from url=(0042)file:///C:/Users/ragha/Recent/main.js.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>main.js</title>
+
+<style type="text/css">
+.s0 { color: #808080;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #cc7832;}
+.s3 { color: #6a8759;}
+.s4 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table cellspacing="0" cellpadding="5" cols="1" width="100%" bgcolor="#606060">
+<tbody><tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+main.js</font>
+</center></td></tr></tbody></table>
+<pre><span class="s0">// Grab elements</span>
+<span class="s2">const </span><span class="s1">selectElement = (selector) =&gt; {</span>
+    <span class="s2">const </span><span class="s1">element = document.querySelector(selector)</span><span class="s2">;</span>
+    <span class="s2">if</span><span class="s1">(element) </span><span class="s2">return </span><span class="s1">element</span><span class="s2">;</span>
+    <span class="s2">throw new </span><span class="s1">Error(</span><span class="s3">`Something went wrong! Make sure that </span><span class="s1">${selector} </span><span class="s3">exists/is typed correctly.`</span><span class="s1">)</span><span class="s2">;</span>
+<span class="s1">}</span><span class="s2">;</span>
+
+<span class="s0">//Nav styles on scroll</span>
+<span class="s2">const </span><span class="s1">scrollHeader = () =&gt;{</span>
+    <span class="s2">const </span><span class="s1">navbarElement = selectElement(</span><span class="s3">'#header'</span><span class="s1">)</span><span class="s2">;</span>
+    <span class="s2">if</span><span class="s1">(</span><span class="s2">this</span><span class="s1">.scrollY &gt;= </span><span class="s4">15</span><span class="s1">) {</span>
+        <span class="s1">navbarElement.classList.add(</span><span class="s3">'activated'</span><span class="s1">)</span><span class="s2">;</span>
+    <span class="s1">} </span><span class="s2">else </span><span class="s1">{</span>
+        <span class="s1">navbarElement.classList.remove(</span><span class="s3">'activated'</span><span class="s1">)</span><span class="s2">;</span>
+    <span class="s1">}</span>
+<span class="s1">}</span>
+
+<span class="s1">window.addEventListener(</span><span class="s3">'scroll'</span><span class="s2">, </span><span class="s1">scrollHeader)</span><span class="s2">;</span>
+
+<span class="s0">// Open menu &amp; search pop-up</span>
+<span class="s2">const </span><span class="s1">menuToggleIcon = selectElement(</span><span class="s3">'#menu-toggle-icon'</span><span class="s1">)</span><span class="s2">;</span>
+<span class="s2">const </span><span class="s1">formOpenBtn = selectElement(</span><span class="s3">'#search-icon'</span><span class="s1">)</span><span class="s2">;</span>
+<span class="s2">const </span><span class="s1">formCloseBtn = selectElement(</span><span class="s3">'#form-close-btn'</span><span class="s1">)</span><span class="s2">;</span>
+<span class="s2">const </span><span class="s1">searchContainer = selectElement(</span><span class="s3">'#search-form-container'</span><span class="s1">)</span><span class="s2">;</span>
+
+<span class="s2">const </span><span class="s1">toggleMenu = () =&gt;{</span>
+    <span class="s2">const </span><span class="s1">mobileMenu = selectElement(</span><span class="s3">'#menu'</span><span class="s1">)</span><span class="s2">;</span>
+    <span class="s1">mobileMenu.classList.toggle(</span><span class="s3">'activated'</span><span class="s1">)</span><span class="s2">;</span>
+    <span class="s1">menuToggleIcon.classList.toggle(</span><span class="s3">'activated'</span><span class="s1">)</span><span class="s2">;</span>
+<span class="s1">}</span>
+
+<span class="s1">menuToggleIcon.addEventListener(</span><span class="s3">'click'</span><span class="s2">, </span><span class="s1">toggleMenu)</span><span class="s2">;</span>
+
+<span class="s0">// Open/Close search form popup</span>
+<span class="s1">formOpenBtn.addEventListener(</span><span class="s3">'click'</span><span class="s2">, </span><span class="s1">() =&gt; searchContainer.classList.add(</span><span class="s3">'activated'</span><span class="s1">))</span><span class="s2">;</span>
+<span class="s1">formCloseBtn.addEventListener(</span><span class="s3">'click'</span><span class="s2">, </span><span class="s1">() =&gt; searchContainer.classList.remove(</span><span class="s3">'activated'</span><span class="s1">))</span><span class="s2">;</span>
+<span class="s0">// -- Close the search form popup on ESC keypress</span>
+<span class="s1">window.addEventListener(</span><span class="s3">'keyup'</span><span class="s2">, </span><span class="s1">(event) =&gt; {</span>
+    <span class="s2">if</span><span class="s1">(event.key === </span><span class="s3">'Escape'</span><span class="s1">) searchContainer.classList.remove(</span><span class="s3">'activated'</span><span class="s1">)</span><span class="s2">;</span>
+<span class="s1">})</span><span class="s2">;</span>
+
+<span class="s0">// Switch theme/add to local storage</span>
+<span class="s2">const </span><span class="s1">body = document.body</span><span class="s2">;</span>
+<span class="s2">const </span><span class="s1">themeToggleBtn = selectElement(</span><span class="s3">'#theme-toggle-btn'</span><span class="s1">)</span><span class="s2">;</span>
+<span class="s2">const </span><span class="s1">currentTheme = localStorage.getItem(</span><span class="s3">'currentTheme'</span><span class="s1">)</span><span class="s2">;</span>
+
+<span class="s0">// Check to see if there is a theme preference in local Storage, if so add the ligt theme to the body</span>
+<span class="s2">if </span><span class="s1">(currentTheme) {</span>
+    <span class="s1">body.classList.add(</span><span class="s3">'light-theme'</span><span class="s1">)</span><span class="s2">;</span>
+<span class="s1">}</span>
+
+<span class="s1">themeToggleBtn.addEventListener(</span><span class="s3">'click'</span><span class="s2">, function </span><span class="s1">() {</span>
+    <span class="s0">// Add light theme on click</span>
+    <span class="s1">body.classList.toggle(</span><span class="s3">'light-theme'</span><span class="s1">)</span><span class="s2">;</span>
+
+    <span class="s0">// If the body has the class of light theme then add it to local Storage, if not remove it</span>
+    <span class="s2">if </span><span class="s1">(body.classList.contains(</span><span class="s3">'light-theme'</span><span class="s1">)) {</span>
+        <span class="s1">localStorage.setItem(</span><span class="s3">'currentTheme'</span><span class="s2">, </span><span class="s3">'themeActive'</span><span class="s1">)</span><span class="s2">;</span>
+    <span class="s1">} </span><span class="s2">else </span><span class="s1">{</span>
+        <span class="s1">localStorage.removeItem(</span><span class="s3">'currentTheme'</span><span class="s1">)</span><span class="s2">;</span>
+    <span class="s1">}</span>
+<span class="s1">})</span><span class="s2">;</span>
+
+<span class="s0">// Swiper</span>
+<span class="s2">const </span><span class="s1">swiper = </span><span class="s2">new </span><span class="s1">Swiper(</span><span class="s3">".swiper"</span><span class="s2">, </span><span class="s1">{</span>
+    <span class="s0">// How many slides to show</span>
+    <span class="s1">slidesPerView: </span><span class="s4">1</span><span class="s2">,</span>
+    <span class="s0">// How much space between slides</span>
+    <span class="s1">spaceBetween: </span><span class="s4">20</span><span class="s2">,</span>
+    <span class="s0">// Make the next and previous buttons work</span>
+    <span class="s1">navigation: {</span>
+        <span class="s1">nextEl: </span><span class="s3">'.swiper-button-next'</span><span class="s2">,</span>
+        <span class="s1">prevEl: </span><span class="s3">'.swiper-button-prev'</span><span class="s2">,</span>
+    <span class="s1">}</span><span class="s2">,</span>
+    <span class="s0">// Make the pagination indicators work</span>
+    <span class="s1">pagination: {</span>
+        <span class="s1">el: </span><span class="s3">'.swiper-pagination'</span>
+    <span class="s1">}</span><span class="s2">,</span>
+    <span class="s0">//Responsive breakpoints for how many slides to show at that view</span>
+    <span class="s1">breakpoints: {</span>
+        <span class="s0">// 700px and up shoes 2 slides</span>
+        <span class="s4">700</span><span class="s1">: {</span>
+          <span class="s1">slidesPerView: </span><span class="s4">2</span>
+        <span class="s1">}</span><span class="s2">,</span>
+        <span class="s0">// 1200px and up shoes 3 slides</span>
+        <span class="s4">1200</span><span class="s1">: {</span>
+            <span class="s1">slidesPerView: </span><span class="s4">3</span>
+        <span class="s1">}</span>
+    <span class="s1">}</span>
+<span class="s1">})</span><span class="s2">;</span></pre>
+
+</body></html>
